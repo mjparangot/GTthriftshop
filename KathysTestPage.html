@@ -2,13 +2,17 @@
 <html>
 <body>
 <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '507863555984054',
-      xfbml      : true,
-      version    : 'v2.1'
+
+	window.fbAsyncInit = function() {
+   	 Parse.FacebookUtils.init({ // this line replaces FB.init({
+      appId      : '507863555984054', // Facebook App ID
+      status     : true, // check Facebook Login status
+      cookie     : true, // enable cookies to allow Parse to access the session
+      xfbml      : true
     });
-  };
+ 
+    // Run code after the Facebook SDK is loaded.
+  	};
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
@@ -17,6 +21,7 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+   
 </script>
 
 <h1>Kathy's Test Page!</h1>
