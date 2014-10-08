@@ -35,12 +35,31 @@
           var testObject = new TestObject();<br/>
           testObject.save({foo: "bar"});
         </code>
+        
     </div>
   </div>
 
   <script type="text/javascript">
     Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
     
+    var user = new Parse.User();
+	user.set("username", "my name");
+	user.set("password", "my pass");
+	user.set("email", "email@example.com");
+  
+	// other fields can be set just like with Parse.Object
+	user.set("phone", "650-555-0000");
+  
+	user.signUp(null, {
+ 		success: function(user) {
+  	 		// Hooray! Let them use the app now.
+ 	 	},
+ 		error: function(user, error) {
+  	  		// Show the error message somewhere and let the user try again.
+   	 		alert("Error: " + error.code + " " + error.message);
+  		}
+	});
+
     var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
       testObject.save({foo: "bar"}, {
