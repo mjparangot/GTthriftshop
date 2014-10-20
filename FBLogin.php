@@ -61,7 +61,7 @@
     		}
   		},
  		 error: function(user, error) {
-   			 alert("User cancelled the Facebook login or did not fully authorize.");
+   			 alert("!UUser cancelled the Facebook login or did not fully authorize.");
   		}
 	});
   	};
