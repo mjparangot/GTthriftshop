@@ -45,8 +45,8 @@
 	window.fbAsyncInit = function() {
     Parse.FacebookUtils.init({ // this line replaces FB.init({
       appId      : '507863555984054', // Facebook App ID
-      status     : true, // check Facebook Login status
-      version    : 'v2.0',
+      //status     : true, // check Facebook Login status
+      version    : 'v1.0',
       cookie     : true, // enable cookies to allow Parse to access the session
       xfbml      : true
     });
@@ -70,7 +70,7 @@
     	var js, fjs = d.getElementsByTagName(s)[0];
     	if (d.getElementById(id)) {return;}
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
+    js.src = "//connect.facebook.net/en_US/all.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
