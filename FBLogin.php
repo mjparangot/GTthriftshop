@@ -57,11 +57,12 @@
     		if (!user.existed()) {
      		 alert("User signed up and logged in through Facebook!");
    			 } else {
-     		 alert("User logged in through Facebook!");
+     		 alert("User logged in through Facebook! access:");
+     		 alert(Parse.User.current().get('authData')['facebook']);
     		}
   		},
  		 error: function(user, error) {
-   			 alert("!UUser cancelled the Facebook login or did not fully authorize.");
+   			 alert("User cancelled the Facebook login or did not fully authorize.");
   		}
 	});
   	};
