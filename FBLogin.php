@@ -57,8 +57,8 @@
     		if (!user.existed()) {
      		 alert("User signed up and logged in through Facebook!");
    			 } else {
-     		 alert("User logged in through Facebook! access:");
-     		 alert(Parse.User.current().get('authData')['facebook']);
+     		 alert("User logged in through Facebook! access token:");
+     		 alert(Parse.User.current().get('authData')['facebook']['access_token']);
     		}
   		},
  		 error: function(user, error) {
