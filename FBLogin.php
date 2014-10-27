@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
+  <title>GT Thrift Shop</title>
   <meta name="description" content="My Parse App">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/reset.css">
@@ -51,17 +51,14 @@
       xfbml      : true
     });
  
-    // Run code after the Facebook SDK is loaded.
+      // Run code after the Facebook SDK is loaded.
       Parse.FacebookUtils.logIn(null, {
-  		success: function(user) {
-    		if (!user.existed()) {
-     		 alert("User signed up and logged in through Facebook!");
-   			 } else {
+  		success: function(user) {  	
      		 alert("User logged in through Facebook! access token:");
-     		 alert(Parse.User.current().get('authData')['facebook']['access_token']);
+     		 alert(Parse.User.current().get('username'));
     		}
   		},
- 		 error: function(user, error) {
+ 		   error: function(user, error) {
    			 alert("User cancelled the Facebook login or did not fully authorize.");
   		}
 	});
