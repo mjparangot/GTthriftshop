@@ -17,6 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
 
+    <link href="/css/content.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="/js/ie-emulation-modes-warning.js"></script>
@@ -29,68 +31,69 @@
   </head>
 
   <body>
-    <h1>Hello, GT students!</h1>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">GT Thrift Shop</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>GT Thrift Shop</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <p>This site pulls the latest items for sale from the GT Thrift Shop Facebook page.</p>
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->
+    <!-- Main content -->
+    <div class="content">
+        <section id="section-1">
+            <div class="mediabox">
+                <img src="img/01.png" alt="img01" />
+                <h3>Sushi Gumbo Beetroot</h3>
+                <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+            </div>
+            <div class="mediabox">
+                <img src="img/02.png" alt="img02" />
+                <h3>Pea Sprouts Fava Soup</h3>
+                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+            </div>
+            <div class="mediabox">
+                <img src="img/03.png" alt="img03" />
+                <h3>Turnip Broccoli Sashimi</h3>
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="mediabox">
+                <img src="img/04.png" alt="img04" />
+                <h3>Asparagus Cucumber Cake</h3>
+                <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+            </div>
+            <div class="mediabox">
+                <img src="img/05.png" alt="img05" />
+                <h3>Magis Kohlrabi Gourd</h3>
+                <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+            </div>
+            <div class="mediabox">
+                <img src="img/06.png" alt="img06" />
+                <h3>Ricebean Rutabaga</h3>
+                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+            </div>
+        </section>
+        <section id="section-3">
+            <div class="mediabox">
+                <img src="img/02.png" alt="img02" />
+                <h3>Noodle Curry</h3>
+                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+            </div>
+            <div class="mediabox">
+                <img src="img/06.png" alt="img06" />
+                <h3>Leek Wasabi</h3>
+                <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+            </div>
+            <div class="mediabox">
+                <img src="img/01.png" alt="img01" />
+                <h3>Green Tofu Wrap</h3>
+                <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+            </div>
+        </section>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
