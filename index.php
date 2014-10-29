@@ -58,7 +58,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>GT Thrift Shop</h1>
+        <h1>Welcome, GT Students!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
@@ -67,21 +67,42 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
+        <div class="col-md-2">
+          <h2>Filters</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-10">
+          <div id="posts-container">
+			<div class="item">
+				<h3>iPod Nano</h3>
+				<img src="http://placehold.it/185x150"/>
+				<p>$100 - Negotiable</p>
+				<p>Perfect condition, no scratches</p>
+			</div>
+			<div class="item">
+				<h3>iPod Nano</h3>
+				<img src="http://placehold.it/185x150"/>
+				<p>$100 - Negotiable</p>
+				<p>Perfect condition, no scratches</p>
+			</div><div class="item">
+				<h3>iPod Nano</h3>
+				<img src="http://placehold.it/185x150"/>
+				<p>$100 - Negotiable</p>
+				<p>Perfect condition, no scratches</p>
+			</div><div class="item">
+				<h3>iPod Nano</h3>
+				<img src="http://placehold.it/185x150"/>
+				<p>$100 - Negotiable</p>
+				<p>Perfect condition, no scratches</p>
+			</div><div class="item">
+				<h3>iPod Nano</h3>
+				<img src="http://placehold.it/185x150"/>
+				<p>$100 - Negotiable</p>
+				<p>Perfect condition, no scratches</p>
+			</div>
+          </div>
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
       </div>
 
       <hr>
@@ -97,7 +118,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+		$('#posts-container').masonry({
+		  columnWidth: 235,
+		  itemSelector: '.item'
+		});
+    </script>
   </body>
 </html>
