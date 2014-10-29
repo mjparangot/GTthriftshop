@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, GT!</h1>
+    <h1>Hello, GT students!</h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
