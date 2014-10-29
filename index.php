@@ -12,7 +12,7 @@
     <title>GT Thrift Shop</title>
 
     <!-- Bootstrap core CSS -->
-    <!--<link href="/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
@@ -44,53 +44,19 @@
     <div class="content">
         <section id="section-1">
             <div class="mediabox">
-                <img src="img/01.png" alt="img01" />
-                <h3>Sushi Gumbo Beetroot</h3>
-                <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+                <img src="http://tympanus.net/Blueprints/FullWidthTabs/img/06.png" alt="img01" />
+                <h3>Item</h3>
+                <p>For sale</p>
             </div>
             <div class="mediabox">
-                <img src="img/02.png" alt="img02" />
-                <h3>Pea Sprouts Fava Soup</h3>
-                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+                <img src="http://tympanus.net/Blueprints/FullWidthTabs/img/06.png" alt="img02" />
+                <h3>Item</h3>
+                <p>For sale</p>
             </div>
             <div class="mediabox">
-                <img src="img/03.png" alt="img03" />
-                <h3>Turnip Broccoli Sashimi</h3>
-                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-            </div>
-        </section>
-        <section id="section-2">
-            <div class="mediabox">
-                <img src="img/04.png" alt="img04" />
-                <h3>Asparagus Cucumber Cake</h3>
-                <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
-            </div>
-            <div class="mediabox">
-                <img src="img/05.png" alt="img05" />
-                <h3>Magis Kohlrabi Gourd</h3>
-                <p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-            </div>
-            <div class="mediabox">
-                <img src="img/06.png" alt="img06" />
-                <h3>Ricebean Rutabaga</h3>
-                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
-            </div>
-        </section>
-        <section id="section-3">
-            <div class="mediabox">
-                <img src="img/02.png" alt="img02" />
-                <h3>Noodle Curry</h3>
-                <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
-            </div>
-            <div class="mediabox">
-                <img src="img/06.png" alt="img06" />
-                <h3>Leek Wasabi</h3>
-                <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-            </div>
-            <div class="mediabox">
-                <img src="img/01.png" alt="img01" />
-                <h3>Green Tofu Wrap</h3>
-                <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+                <img src="http://tympanus.net/Blueprints/FullWidthTabs/img/06.png" alt="img03" />
+                <h3>Item</h3>
+                <p>For sale</p>
             </div>
         </section>
     </div>
