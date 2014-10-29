@@ -12,7 +12,7 @@
     <title>GT Thrift Shop</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="/css/bootstrap.min.css" rel="stylesheet">-->
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>GT Thrift Shop</h1>
-        <p>This site pulls the latest items for sale from the GT Thrift Shop Facebook page.</p>
+        <p>This aggregrates and displays the latest items for sale from the GT Thrift Shop Facebook page.</p>
       </div>
     </div>
 
