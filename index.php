@@ -29,6 +29,7 @@
   </head>
 
   <body>
+    <h1>Hello, GT students!</h1>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
