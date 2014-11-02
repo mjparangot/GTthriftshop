@@ -13,6 +13,7 @@ window.fbAsyncInit = function() {
     success: function(user) {
       if (!user.existed()) {
         alert("User signed up and logged in through Facebook!");
+        alert(Parse.User.current().get('username'));
       } else {
         alert("User logged in through Facebook!");
       }
