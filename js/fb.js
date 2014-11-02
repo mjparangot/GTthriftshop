@@ -1,11 +1,12 @@
-Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
+Parse.initialize("M5oofaMjdXd7e6DVPaF1ClMOye5ihfpPVOcUBDls", "rgACeEmcU6vQgReZZ5QE9C9o1MNrmmkO38PkPux9");
 
 window.fbAsyncInit = function() {
   Parse.FacebookUtils.init({ // this line replaces FB.init({
-    appId      : '507863555984054',
+    appId      : '397910377029373',
     status     : true, // check Facebook Login status
     cookie     : true, // enable cookies to allow Parse to access the session
-    xfbml      : true
+    xfbml      : true,
+    version    : 'v2.1'
   });
 
   Parse.FacebookUtils.logIn(null, {
