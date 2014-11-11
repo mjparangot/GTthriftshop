@@ -19,33 +19,22 @@
         </div>
         <div class="col-md-10">
           <div id="posts-container">
+			<?
+				$items = getItems();
+				foreach ($items as $item) {
+			?>
+			
 			<div class="item">
-				<h3>iPod Nano</h3>
+				<h3><?= $item[0] ?></h3>
 				<img src="http://placehold.it/185x150"/>
-				<p>$100 - Negotiable</p>
-				<p>Perfect condition, no scratches</p>
+				<p>$<?= $item[1] ?> - <?= $item[2] ?></p>
+				<p><?= $item[3] ?> <?= $item[4] ?></p>
+				<p><?= $item[5] ?></p>
 			</div>
-			<div class="item">
-				<h3>iPod Nano</h3>
-				<img src="http://placehold.it/185x150"/>
-				<p>$100 - Negotiable</p>
-				<p>Perfect condition, no scratches</p>
-			</div><div class="item">
-				<h3>iPod Nano</h3>
-				<img src="http://placehold.it/185x150"/>
-				<p>$100 - Negotiable</p>
-				<p>Perfect condition, no scratches</p>
-			</div><div class="item">
-				<h3>iPod Nano</h3>
-				<img src="http://placehold.it/185x150"/>
-				<p>$100 - Negotiable</p>
-				<p>Perfect condition, no scratches</p>
-			</div><div class="item">
-				<h3>iPod Nano</h3>
-				<img src="http://placehold.it/185x150"/>
-				<p>$100 - Negotiable</p>
-				<p>Perfect condition, no scratches</p>
-			</div>
+			
+			<?
+				}
+			?>
           </div>
        </div>
       </div>
