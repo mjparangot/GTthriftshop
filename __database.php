@@ -19,7 +19,7 @@
 		
 		$array = array();
 		
-		while ($row = pg_fetch_row($result)) {
+		while ($row = pg_fetch_array($result, null, PGSQL_ASSOC)) {
 		  $array[] = $row;
 		}
 		

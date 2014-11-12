@@ -25,11 +25,10 @@
 			?>
 			
 			<div class="item">
-				<h3><?= $item[0] ?></h3>
+				<h3><?= $item['itemname'] ?></h3>
 				<img src="http://placehold.it/185x150"/>
-				<p>$<?= $item[1] ?> - <?= $item[2] ?></p>
-				<p><?= $item[3] ?> <?= $item[4] ?></p>
-				<p><?= $item[5] ?></p>
+				<p>$<?= $item['itemprice'] ?> - <?= $item['itemstatus'] ?></p>
+				<p><?= $item['itemdescription'] ?></p>
 			</div>
 			
 			<?
