@@ -14,12 +14,14 @@
   				$items = getItems();
   				foreach ($items as $item) {
   			?>
-    			<li class="sale-item">
-    				<h3><?= $item['itemname'] ?></h3>
-    				<img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/>
-    				<p>$<?= $item['itemprice'] ?> - <?= $item['itemstatus'] ?></p>
-    				<p><?= $item['itemdescription'] ?></p>
-    			</li>
+    			<ul class="pricing-table sale-item">
+					<li class="item-image"><img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/></li>            
+					<li class="title"><?= $item['itemname'] ?></li>
+				    <li class="price"><?= $item['itemprice'] ?></li>
+				    <li class="description"><?= $item['itemdescription'] ?></li>
+				    <li class="bullet-item"><?= $item['itemstatus'] ?></li>
+				    <li class="cta-button"><a class="button" href="#">Request</a></li>
+				  </ul>
   			<?
           }
   			?>
