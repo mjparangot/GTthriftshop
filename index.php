@@ -19,21 +19,21 @@
         </div>
         <div class="col-md-10">
           <div id="posts-container">
-			<?
-				$items = getItems();
-				foreach ($items as $item) {
-			?>
-			
-			<div class="item">
-				<h3><?= $item['itemname'] ?></h3>
-				<img src="http://placehold.it/185x150"/>
-				<p>$<?= $item['itemprice'] ?> - <?= $item['itemstatus'] ?></p>
-				<p><?= $item['itemdescription'] ?></p>
-			</div>
-			
-			<?
-				}
-			?>
+      			<?
+      				$items = getItems();
+      				foreach ($items as $item) {
+      			?>
+      			
+        			<div class="item">
+        				<h3><?= $item['itemname'] ?></h3>
+        				<img src="http://placehold.it/185x150"/>
+        				<p>$<?= $item['itemprice'] ?> - <?= $item['itemstatus'] ?></p>
+        				<p><?= $item['itemdescription'] ?></p>
+        			</div>
+      			
+      			<?
+      				}
+      			?>
           </div>
        </div>
       </div>
