@@ -58,6 +58,7 @@
      		 alert("User signed up and logged in through Facebook!");
    			 } else {
      		 alert("User logged in through Facebook! access token:");
+     		 //ACCESS TOKEN -
      		 alert(Parse.User.current().get('authData')['facebook']['access_token']);
     		}
   		},
