@@ -1,11 +1,9 @@
 <? include '_header.php'; ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
+    <div class="top-jumbotron">
+      <div class="top-container">
         <h1>Welcome, GT Students!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
@@ -37,14 +35,5 @@
           </div>
        </div>
       </div>
-    
-    <script>
-		$( document ).ready(function() {
-			$('#posts-container').masonry({
-			  columnWidth: 235,
-			  itemSelector: '.item'
-			});
-		});
-    </script>
-
+    </div>
 <? include '_footer.php'; ?>
