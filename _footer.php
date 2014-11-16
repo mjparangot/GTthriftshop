@@ -3,6 +3,8 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
+        
+        console.log("hi");
     </script>
   </body>
 </html>
