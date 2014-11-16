@@ -15,12 +15,12 @@
   				foreach ($items as $item) {
   			?>
 			<li class="sale-item">
-				<ul class="pricing-table">
-					<li class="item-image"><img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/></li>                          
+				<ul class="pricing-table">                        
 					<li class="title"><?= $item['itemname'] ?></li>
 					<li class="price">$<?= $item['itemprice'] ?></li>
 					<li class="description"><?= $item['itemdescription'] ?></li>
 					<li class="bullet-item"><?= $item['itemstatus'] ?></li>
+          <li class="bullet-item"><img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/></li>  
 					<li class="cta-button"><a class="button" href="#">Request</a></li>
 				</ul>
 			</li>
