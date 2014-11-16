@@ -9,7 +9,7 @@
     -->
 
     <div class="container">
-      <ul class="small-block-grid-3">
+      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
   			<?
   				$items = getItems();
   				foreach ($items as $item) {
