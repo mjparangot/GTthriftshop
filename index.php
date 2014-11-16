@@ -16,7 +16,7 @@
   			?>
     			<li class="sale-item">
     				<h3><?= $item['itemname'] ?></h3>
-    				<img src="http://placehold.it/185x150"/>
+    				<img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/>
     				<p>$<?= $item['itemprice'] ?> - <?= $item['itemstatus'] ?></p>
     				<p><?= $item['itemdescription'] ?></p>
     			</li>
