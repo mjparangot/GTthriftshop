@@ -32,7 +32,6 @@
    			 alert("User cancelled the Facebook login or did not fully authorize.");
   		}
 	});
-  	};
   	
  	(function(d, s, id){
     	var js, fjs = d.getElementsByTagName(s)[0];
