@@ -3,14 +3,13 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
     <script>
-    var $containter = $('.container');
-      $containter.imagesLoaded( function(){
-        $containter.masonry({
-          itemSelector: '.sale-item',
-          //isAnimated: !Modernizr.csstransitions,
-          //isFitWidth: true
-      });  
-    });
+      var container = document.querySelector('.container');
+      var msnry = new Masonry( container, {
+        // options
+        //columnWidth: 200,
+        itemSelector: '.sale-item'
+      });
+    </script>
     <script type="text/javascript">
         $(document).foundation();
         
