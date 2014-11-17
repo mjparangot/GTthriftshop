@@ -1,7 +1,7 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script>
+    <script type="text/javascript">
         $(document).foundation();
         
         function loginWithFacebook(){
