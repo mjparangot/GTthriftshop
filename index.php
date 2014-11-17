@@ -22,7 +22,7 @@
               if ($item['price'] == -1)
                 echo 'Price varies';
               else
-                echo '$' + $item['price']; 
+                echo '$' . $item['price']; 
             ?>
           </li>
 					<li class="description"><?= $item['description'] ?></li>
