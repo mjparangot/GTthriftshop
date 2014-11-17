@@ -21,7 +21,7 @@
 					<li class="description"><?= $item['itemdescription'] ?></li>
 					<li class="bullet-item"><?= $item['itemstatus'] ?></li>
           <li class="bullet-item"><img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/></li>  
-					<li class="cta-button"><a class="button" href="#">Request</a></li>
+					<li class="cta-button"><a class="button" href="#">View Post</a></li>
 				</ul>
 			</li>
   			<?
