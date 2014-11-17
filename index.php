@@ -16,11 +16,11 @@
   			?>
 			<li class="sale-item">
 				<ul class="pricing-table">                        
-					<li class="title"><?= $item['itemname'] ?></li>
-					<li class="price">$<?= $item['itemprice'] ?></li>
-					<li class="description"><?= $item['itemdescription'] ?></li>
-					<li class="bullet-item"><?= $item['itemstatus'] ?></li>
-          <li class="bullet-item"><img src="<?= ($item['itempicture'] == '' ? 'http://placehold.it/185x150' : $item['itempicture']) ?>"/></li>  
+					<li class="title"><?= $item['name'] ?></li>
+					<li class="price"><?= $item['price'] ?></li>
+					<li class="description"><?= $item['description'] ?></li>
+					<li class="bullet-item"><?= $item['status'] ?></li>
+          <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
 					<li class="cta-button"><a class="button" href="#">View Post</a></li>
 				</ul>
 			</li>
