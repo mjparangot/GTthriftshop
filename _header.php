@@ -21,10 +21,6 @@
     <script src="js/vendor/modernizr.js"></script>
     
     <!-- Parse for Facebook Integration -->
-    <meta charset="utf-8">
-
- 	<meta name="description" content="My Parse App">
-  	<meta name="viewport" content="width=device-width">
   	<link rel="stylesheet" href="css/reset.css">
   	<link rel="stylesheet" href="css/styles.css">
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
