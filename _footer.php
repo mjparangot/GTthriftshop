@@ -4,7 +4,7 @@
     <script type="text/javascript">
         $(document).foundation();
         
-        function loginWithFacebook(){
+
         console.log("login with fb");
         Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 

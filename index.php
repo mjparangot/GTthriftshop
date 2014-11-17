@@ -32,6 +32,5 @@
     
     <script type="text/javascript">
     	console.log("test");
-    	loginWithFacebook();
     </script>
 <? include '_footer.php'; ?>
