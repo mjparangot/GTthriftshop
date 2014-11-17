@@ -29,4 +29,8 @@
   			?>
       </ul>
     </div>
+    
+    <script type="text/javascript">
+    	console.log("test");
+    </script>
 <? include '_footer.php'; ?>
