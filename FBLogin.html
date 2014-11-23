@@ -40,7 +40,6 @@
   </div>
 
   <script type="text/javascript">
-	console.log("updated");
     Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 	window.fbAsyncInit = function() {
     	Parse.FacebookUtils.init({ // this line replaces FB.init({
@@ -58,6 +57,7 @@
     			// the user's ID, a valid access token, a signed
     			// request, and the time the access token 
     			// and signed request each expire
+    			console.log("already connected");
     			var uid = response.authResponse.userID;
     			var accessToken = response.authResponse.accessToken;
   			//} else if (response.status === 'not_authorized') {
@@ -66,6 +66,7 @@
   			} else {
     			// the user isn't logged in to Facebook.
     			// Run code after the Facebook SDK is loaded.
+    			console.log("user not logged in or authenticated");
     			Parse.FacebookUtils.logIn(null, {
   					success: function(user) {
     					if (!user.existed()) {
