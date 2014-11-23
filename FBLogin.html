@@ -50,7 +50,8 @@
       		xfbml      : true
     	});
     
-    	FB.getLoginStatus(){
+    	FB.getLoginStatus(function(response) {
+    		console.log ("get login status");
  			if (response.status === 'connected') {
     			// the user is logged in and has authenticated your
     			// app, and response.authResponse supplies
@@ -82,7 +83,7 @@
   					}
 				});
   			}
- 		};
+ 		});
  
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
