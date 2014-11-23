@@ -43,68 +43,66 @@
 	console.log("updated");
     Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 	window.fbAsyncInit = function() {
-    Parse.FacebookUtils.init({ // this line replaces FB.init({
-    	appId      : '507863555984054', // Facebook App ID
-      	//status     : true, // check Facebook Login status
-      	version    : 'v1.0',
-      	cookie     : true, // enable cookies to allow Parse to access the session
-      	xfbml      : true
-    });
+    	Parse.FacebookUtils.init({ // this line replaces FB.init({
+    		appId      : '507863555984054', // Facebook App ID
+      		//status     : true, // check Facebook Login status
+      		version    : 'v1.0',
+      		cookie     : true, // enable cookies to allow Parse to access the session
+      		xfbml      : true
+    	});
     
-    FB.getLoginStatus(function(response) {
- 		if (response.status === 'connected') {
-    		// the user is logged in and has authenticated your
-    		// app, and response.authResponse supplies
-    		// the user's ID, a valid access token, a signed
-    		// request, and the time the access token 
-    		// and signed request each expire
-    		var uid = response.authResponse.userID;
-    		var accessToken = response.authResponse.accessToken;
-  		} else if (response.status === 'not_authorized') {
-   			// the user is logged in to Facebook, 
-    		// but has not authenticated your app
-  		} else {
-    		// the user isn't logged in to Facebook.
-    		// Run code after the Facebook SDK is loaded.
-    		Parse.FacebookUtils.logIn(null, {
-  				success: function(user) {
-    				if (!user.existed()) {
-     					alert("User signed up and logged in through Facebook!");
-   					} else {
-     		 			alert("User logged in through Facebook! access token:");
-     		 			//ACCESS TOKEN -
-     		 			alert(Parse.User.current().get('authData')['facebook']['access_token']);
-    				}
-  				},
- 				error: function(user, error) {
-   					alert("User cancelled the Facebook login or did not fully authorize.");
-  				}
-			});
-  		}
- 	});
+    	FB.getLoginStatus(function(response) {
+ 			if (response.status === 'connected') {
+    			// the user is logged in and has authenticated your
+    			// app, and response.authResponse supplies
+    			// the user's ID, a valid access token, a signed
+    			// request, and the time the access token 
+    			// and signed request each expire
+    			var uid = response.authResponse.userID;
+    			var accessToken = response.authResponse.accessToken;
+  			} else if (response.status === 'not_authorized') {
+   				// the user is logged in to Facebook, 
+    			// but has not authenticated your app
+  			} else {
+    			// the user isn't logged in to Facebook.
+    			// Run code after the Facebook SDK is loaded.
+    			Parse.FacebookUtils.logIn(null, {
+  					success: function(user) {
+    					if (!user.existed()) {
+     						alert("User signed up and logged in through Facebook!");
+   						} else {
+     		 				alert("User logged in through Facebook! access token:");
+     		 				//ACCESS TOKEN -
+     		 				alert(Parse.User.current().get('authData')['facebook']['access_token']);
+    					}
+  					},
+ 					error: function(user, error) {
+   						alert("User cancelled the Facebook login or did not fully authorize.");
+  					}
+				});
+  			}
+ 		});
  
- 
-  	
- 	(function(d, s, id){
-    	var js, fjs = d.getElementsByTagName(s)[0];
-    	if (d.getElementById(id)) {return;}
+ 		(function(d, s, id){
+    		var js, fjs = d.getElementsByTagName(s)[0];
+    		if (d.getElementById(id)) {return;}
     		js = d.createElement(s); js.id = id;
     		js.src = "//connect.facebook.net/en_US/all.js";
     		fjs.parentNode.insertBefore(js, fjs);
-  	}(document, 'script', 'facebook-jssdk'));
+  		}(document, 'script', 'facebook-jssdk'));
   
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
+    	var TestObject = Parse.Object.extend("TestObject");
+    	var testObject = new TestObject();
     
-    testObject.save({foo: "bar"}, {
-    	success: function(object) {
-        	$(".success").show();
-      	},
-      	error: function(model, error) {
-        	$(".error").show();
-      	}
-   	});
-   
+    	testObject.save({foo: "bar"}, {
+    		success: function(object) {
+        		$(".success").show();
+      		},
+      		error: function(model, error) {
+        		$(".error").show();
+      		}
+   		});
+   }
   </script>
 </body>
 
