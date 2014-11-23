@@ -40,7 +40,6 @@
   </div>
 
   <script type="text/javascript">
-  $(document).ready(function(){
     Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 	window.fbAsyncInit = function() {
     	Parse.FacebookUtils.init({ // this line replaces FB.init({
@@ -51,24 +50,7 @@
       		xfbml      : true
     	});
     
-    	FB.getLoginStatus(function(response) {
-    		console.log ("get login status");
- 			if (response.status === 'connected') {
-    			// the user is logged in and has authenticated your
-    			// app, and response.authResponse supplies
-    			// the user's ID, a valid access token, a signed
-    			// request, and the time the access token 
-    			// and signed request each expire
-    			console.log("already connected");
-    			var uid = response.authResponse.userID;
-    			var accessToken = response.authResponse.accessToken;
-  			//} else if (response.status === 'not_authorized') {
-   				// the user is logged in to Facebook, 
-    			// but has not authenticated your app
-  			} else {
-    			// the user isn't logged in to Facebook.
-    			// Run code after the Facebook SDK is loaded.
-    			console.log("user not logged in or authenticated");
+    	
     			Parse.FacebookUtils.logIn(null, {
   					success: function(user) {
     					if (!user.existed()) {
@@ -83,8 +65,7 @@
    						alert("User cancelled the Facebook login or did not fully authorize.");
   					}
 				});
-  			}
- 		}, true);
+
  
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
@@ -106,8 +87,6 @@
       		}
    		});
    }
-   
-   });
   </script>
 </body>
 
