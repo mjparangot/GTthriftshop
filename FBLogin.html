@@ -65,10 +65,7 @@
     		// but has not authenticated your app
   		} else {
     		// the user isn't logged in to Facebook.
-  		}
- 	});
- 
-    // Run code after the Facebook SDK is loaded.
+    		// Run code after the Facebook SDK is loaded.
     Parse.FacebookUtils.logIn(null, {
   		success: function(user) {
     		if (!user.existed()) {
@@ -84,6 +81,10 @@
   		}
 	});
   	};
+  		}
+ 	});
+ 
+ 
   	
  	(function(d, s, id){
     	var js, fjs = d.getElementsByTagName(s)[0];
