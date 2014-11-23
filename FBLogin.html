@@ -50,6 +50,7 @@
       		xfbml      : true
     	});
     
+    	$('document').ready(function(){
     	FB.getLoginStatus(function(response) {
     		console.log ("get login status");
  			if (response.status === 'connected') {
@@ -84,8 +85,7 @@
 				});
   			}
  		}, true);
- 		
- 		FB.getLoginStatus();
+ 		})
  
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
