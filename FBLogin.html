@@ -51,6 +51,7 @@
     	});
     
     	$('document').ready(function(){
+    	console.log ("document ready");
     	FB.getLoginStatus(function(response) {
     		console.log ("get login status");
  			if (response.status === 'connected') {
