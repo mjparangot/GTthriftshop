@@ -8,11 +8,9 @@
     </div>
     -->
     
-    <!-- If they are not logged in, show login button -->
+    <!-- If they are not logged into Facebook, show login button -->
+    <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
 	<button type="submit" class="btn btn-success" onclick="loginWithFacebook();">Login with Facebook</button>
-    
-    <!-- TODO:If they are logged in, show logout button -->
-    <button type="submit" class="btn btn-success" onclick="Parse.User.logOut();">Login with Facebook</button>
     
     <div class="container">
       <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
