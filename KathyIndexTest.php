@@ -1,6 +1,5 @@
 <?php
 include_once("config.php");
-	console.log($fbuser);
 	if ($fbuser) {
   		try {
         	//Get user pages details using Facebook Query Language (FQL)
@@ -69,5 +68,3 @@ if($fbuser && empty($postResults))
 ?>
 </body>
 </html>
-
-<? include '_footer.php'; ?>

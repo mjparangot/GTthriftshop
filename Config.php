@@ -18,6 +18,7 @@ $facebook = new Facebook(array(
 $fbuser = $facebook->getUser();
 ?>
 
-<script type="text/javascript">
+<script>
+console.log("hi");
 console.log($fbuser);
 </script>
