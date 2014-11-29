@@ -5,7 +5,7 @@ include_once("inc/facebook.php"); //include facebook SDK
 $appId = '507863555984054'; //Facebook App ID
 $appSecret = '●●●●●●●●'; // Facebook App Secret
 $return_url = 'http://gt-thrift-shop-test.herokuapp.com/process.php';  //return url (url to script)
-$homeurl = 'http://gt-thrift-shop-test.herokuapp.com/';  //return to home
+$homeurl = 'http://gt-thrift-shop-test.herokuapp.com/KathyIndexTest.php';  //return to home
 $fbPermissions = 'publish_stream,manage_pages';  //Required facebook permissions
 ##################################
 
