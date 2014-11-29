@@ -1,5 +1,6 @@
 <?php
 include_once("config.php");
+	console.log($fbuser);
 	if ($fbuser) {
   		try {
         	//Get user pages details using Facebook Query Language (FQL)
@@ -12,7 +13,7 @@ include_once("config.php");
         //Show login button for guest users
         $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
         echo '<a href="'.$loginUrl.'"><img src="images/facebook-login.png" border="0"></a>';
-}
+	}
 
 if($fbuser && empty($postResults))
 {
