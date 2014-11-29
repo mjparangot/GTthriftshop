@@ -48,7 +48,6 @@
     		js.src = "//connect.facebook.net/en_US/all.js";
     		fjs.parentNode.insertBefore(js, fjs);
   		}(document, 'script', 'facebook-jssdk'));
-
    		var TestObject = Parse.Object.extend("TestObject");
     	var testObject = new TestObject();
       	testObject.save({foo: "bar"}, {
