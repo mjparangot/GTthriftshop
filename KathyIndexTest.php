@@ -70,3 +70,5 @@ if($fbuser && empty($postResults))
 ?>
 </body>
 </html>
+
+<? include '_footer.php'; ?>
