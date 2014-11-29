@@ -1,3 +1,5 @@
+<? include '_header.php'; ?>
+
 <?php
 include_once("config.php");
 if ($fbuser) {

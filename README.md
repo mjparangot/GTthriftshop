@@ -9,5 +9,6 @@ Posts are currently being read in from Facebook's GT Thrift Shop application and
 displayed on the website. Click "View Post" to connect to the Facebook post and 
 continue transactions from there.
 
-Backend is totally set up. We are currently waiting for our front-end team to finish their part of the project
+Backend is totally set up. Posts from Facebook are being categorized via hashtags.
+We are currently waiting for our front-end team to finish their part of the project
 over the weekend.
