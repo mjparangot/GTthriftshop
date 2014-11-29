@@ -1,16 +1,14 @@
-<? include '_header.php'; ?>
-
 <?php
 include_once("config.php");
-if ($fbuser) {
-  try {
-        //Get user pages details using Facebook Query Language (FQL)
-        $fql_query = 'SELECT page_id, name, page_url FROM page WHERE page_id IN (SELECT page_id FROM page_admin WHERE uid='.$fbuser.')';
-        $postResults = $facebook->api(array( 'method' => 'fql.query', 'query' => $fql_query ));
-    } catch (FacebookApiException $e) {
-        echo $e->getMessage();
-  }
-}else{
+	if ($fbuser) {
+  		try {
+        	//Get user pages details using Facebook Query Language (FQL)
+        	$fql_query = 'SELECT page_id, name, page_url FROM page WHERE page_id IN (SELECT page_id FROM page_admin WHERE uid='.$fbuser.')';
+        	$postResults = $facebook->api(array( 'method' => 'fql.query', 'query' => $fql_query ));
+    	} catch (FacebookApiException $e) {
+        	echo $e->getMessage();
+  		}
+	}else{
         //Show login button for guest users
         $loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
         echo '<a href="'.$loginUrl.'"><img src="images/facebook-login.png" border="0"></a>';
