@@ -26,11 +26,11 @@
                 <label>Name
                   <input type="text" placeholder="Name of item being sold" />
                 </label>
-                <div class="large-6 columns">
-                  <label>Price
-                    <input type="text" placeholder="Asking price" />
-                  </label>
-                </div>
+              </div>
+              <div class="large-6 columns">
+                <label>Price
+                  <input type="text" placeholder="Asking price" />
+                </label>
               </div>
             </div>
             <div class="row">
