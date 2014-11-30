@@ -90,9 +90,10 @@
       		}
     	});
     	  		
+  		console.log("here");
+  			
   		function isLoggedIn(){
-  			console.log("here");
-  			return Parse.User.current();
+  			return user.existed();
   		}
   		
     	if (isLoggedIn())
