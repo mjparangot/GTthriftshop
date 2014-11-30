@@ -52,7 +52,6 @@
       			xfbml      : true
    			 });
    			 
-   			function isLoggedIn(){
   			FB.Event.subscribe('auth.authResponseChange', function(response) {
     		// Here we specify what we do with the response anytime this event occurs. 
     			if (response.status === 'connected') {
@@ -68,7 +67,6 @@
     				alert('not logged');
     			}
   			});
-  		};
    		};
    			 
         function loginWithFacebook(){
@@ -80,7 +78,7 @@
    			 		} else {
      		 			alert("User logged in through Facebook! access token:");
      		 			//ACCESS TOKEN -
-     		 			alert(Parse.User.current().get('authData')['facebook']['access_token']);
+     		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
   				},
  		 		error: function(user, error) {
