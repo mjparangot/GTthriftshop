@@ -16,6 +16,12 @@
 	height: 100%;
 }
 
-.pricing-table .description {
+.pricing-table.description {
 	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #333;
+	font-size: 13px;
+	line-height: 17px;
+	word-wrap: break-word;
 }
