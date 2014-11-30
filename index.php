@@ -15,6 +15,7 @@
   
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
+      <!-- Top navigation bar -->
       <nav class="tab-bar">
         <section class="left-small">
           <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -23,64 +24,53 @@
         <section class="middle tab-bar-section">
           <h1 class="title">GT Thrift Shop</h1>
         </section>
-
-        <section class="right-small">
-          <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-        </section>
       </nav>
 
+      <!-- Slide out menu -->
       <aside class="left-off-canvas-menu">
         <ul class="off-canvas-list">
           <li><label>Foundation</label></li>
           <li><a href="#">The Psychohistorians</a></li>
-          <li><a href="#">...</a></li>
         </ul>
       </aside>
 
-      <aside class="right-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><label>Users</label></li>
-          <li><a href="#">Hari Seldon</a></li>
-          <li><a href="#">...</a></li>
-        </ul>
-      </aside>
-
+      <!-- Main content -->
       <section class="main-section">
-        <!-- content goes here -->
+        <div class="container">
+          <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+            <?
+              $items = getAllItems();
+              foreach ($items as $item) {
+            ?>
+                <li class="sale-item">
+                  <ul class="pricing-table">                        
+                    <li class="title"><?= $item['name'] ?></li>
+                    <li class="price">
+                    <? 
+                      if ($item['price'] == -1)
+                        echo 'Price varies';
+                      else
+                        echo '$' . $item['price']; 
+                    ?>
+                    </li>
+                    <li class="description"><?= $item['description'] ?></li>
+                    <li class="bullet-item"><?= $item['status'] ?></li>
+                    <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
+                    <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
+                  </ul>
+                </li>
+            <?
+              }
+            ?>
+          </ul>
+        </div>
       </section>
 
-    <a class="exit-off-canvas"></a>
+      <a class="exit-off-canvas"></a>
 
     </div>
   </div>
 
-  <div class="container">
-    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
-			<?
-				$items = getAllItems();
-				foreach ($items as $item) {
-			?>
-    			<li class="sale-item">
-    				<ul class="pricing-table">                        
-    					<li class="title"><?= $item['name'] ?></li>
-    					<li class="price">
-              <? 
-                if ($item['price'] == -1)
-                  echo 'Price varies';
-                else
-                  echo '$' . $item['price']; 
-              ?>
-              </li>
-    					<li class="description"><?= $item['description'] ?></li>
-    					<li class="bullet-item"><?= $item['status'] ?></li>
-              <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
-    					<li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
-    				</ul>
-    			</li>
-			<?
-        }
-			?>
-    </ul>
-  </div>
+  
     
 <? include '_footer.php'; ?>
