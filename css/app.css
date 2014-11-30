@@ -14,6 +14,8 @@
 .pricing-table .item-image > img {
 	width: 100%;
 	height: 100%;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .pricing-table .description {
