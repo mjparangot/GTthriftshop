@@ -4,6 +4,7 @@
     <script src="js/masonry.pkgd.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script>
+      $(document).foundation();
       var container = document.querySelector('.container');
       var msnry = new Masonry( container, {
         // options
@@ -12,14 +13,14 @@
         isAnimated: true
       });
       
+      msnry.reloadItems();
+      
       var $iso_container = $('.container');
   		// init
   		$iso_container.isotope({
     		// options
     		itemSelector: '.sale-item'
   		});
-
-      $container.masonry('reloadItems');
 		
   		$('#searchpanel').submit(submitSearch);
   		
@@ -43,7 +44,6 @@
   		}
     </script>
     <script type="text/javascript">
-        $(document).foundation();
         
         Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 		window.fbAsyncInit = function() {
@@ -64,7 +64,8 @@
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
-     		 			$('#fb-button').hide();
+     		 			$('#fb-login').hide();
+     		 			$('#fb-logout').show();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
@@ -74,6 +75,11 @@
   				}
 			});
   		};
+  		
+  		function logoutWithFacebook(){
+  		  	alert("logging out");
+  			Parse.User.logout();
+  		}
   	
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
@@ -94,7 +100,6 @@
       		}
     	});
   			
-  		
     	//if (isLoggedIn())
 		//	$('#fb-button').hide();
     

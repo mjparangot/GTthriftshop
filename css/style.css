@@ -15,3 +15,7 @@ body {
 .item img {
 	margin-bottom: 10px;
 }
+
+.hidden-element {
+	display: none;
+}
