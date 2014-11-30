@@ -1,5 +1,6 @@
     
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
     <script>
       var container = document.querySelector('.container');

@@ -3,7 +3,6 @@
 	
 	function getAllItems() {
 		$items = runQuery('SELECT * FROM "items"');
-		
 		return $items;
 	}
 	
