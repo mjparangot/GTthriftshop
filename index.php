@@ -14,10 +14,9 @@
         <ul class="right">
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
-          <?php
-		  if (false)
+          <?php if (true): ?>
           	<li class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
-          ?>
+          <?php endif ?>
           <li class="divider"></li>
           <li class="active make-post"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
           <!-- Make a post modal -->
