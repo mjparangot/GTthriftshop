@@ -73,6 +73,10 @@
   				}
 			});
   		};
+  		
+  		function logoutWithFacebook(){
+  			Parse.User.logout();
+  		}
   	
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,7 +97,6 @@
       		}
     	});
   			
-  		
     	//if (isLoggedIn())
 		//	$('#fb-button').hide();
     
