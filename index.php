@@ -13,9 +13,9 @@
 	<button type="submit" class="btn btn-success" onclick="loginWithFacebook();">Login with Facebook</button>
     
     <div class="container">
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
   			<?
-  				$items = getItems();
+  				$items = getAllItems();
   				foreach ($items as $item) {
   			?>
       			<li class="sale-item">
