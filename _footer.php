@@ -64,7 +64,8 @@
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
-     		 			$('#fb-button').hide();
+     		 			$('#fb-login').hide();
+     		 			$('#fb-logout').show();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
