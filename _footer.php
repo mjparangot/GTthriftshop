@@ -72,6 +72,10 @@
   				}
 			});
   		};
+  		
+  		function isLoggedIn(){
+  			console.log("Check log in");
+  		}
   	
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
