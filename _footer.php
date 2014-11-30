@@ -78,9 +78,9 @@
   		
   		function logoutWithFacebook(){
   		  	alert("logging out");
-  		  	alert(Parse.User());
-  		  	alert(Parse.User().logOut());
-  		  	alert(Parse.User.current());
+  		  	alert("current "+Parse.User.current());
+  		  	alert("Parse.User()" +Parse.User());
+  		  	alert(Parse.User.logOut());
   			//ParseUser.getCurrentUser().logOut();
   		};
   	
