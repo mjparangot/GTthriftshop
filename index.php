@@ -9,12 +9,13 @@
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
+        <!-- If they are not logged into Facebook, show login button -->
+        <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
+        <li class="active"><a onclick="loginWithFacebook()">Login with Facebook</a></li>
       </ul>
-
       <!-- Left Nav Section -->
       <ul class="left">
         <li class="has-form">
@@ -30,9 +31,6 @@
       </ul>
     </section>
   </nav>
-  <!-- If they are not logged into Facebook, show login button -->
-  <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
-	<button type="submit" class="btn btn-success" onclick="loginWithFacebook();">Login with Facebook</button>
   
   <div class="container">
     <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
