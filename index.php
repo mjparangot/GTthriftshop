@@ -22,6 +22,7 @@
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
             <form>
               <div class="row">
+                <label>Item 1</label>
                 <div class="large-6 columns">
                   <label>Name
                     <input type="text" placeholder="Name of item being sold" />
@@ -73,17 +74,19 @@
     			<li class="sale-item">
     				<ul class="pricing-table">  
               <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
-    					<!--<li class="title"><?= $item['name'] ?></li>-->
+    					<!--
+              <li class="title"><?= $item['name'] ?></li>
     					<li class="price">
-              <? 
-                if ($item['price'] == -1)
-                  echo 'Price varies';
-                else
-                  echo '$' . $item['price']; 
-              ?>
-              </li>
-    					<li class="description"><?= $item['description'] ?></li>
-    					<li class="bullet-item"><?= $item['status'] ?></li>    					<li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
+                <? 
+                  //if ($item['price'] == -1)
+                  //  echo 'Price varies';
+                  //else
+                  //  echo '$' . $item['price']; 
+                ?>
+              </li>  
+              -->
+    					<li class="description"><?= $item['description'] ?></li>					
+              <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
     				</ul>
     			</li>
 			<?
