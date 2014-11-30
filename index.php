@@ -15,7 +15,7 @@
         <!-- If they are not logged into Facebook, show login button -->
         <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
         <li class="active"><a onclick="loginWithFacebook()">Login with Facebook</a></li>
-        <li class="active"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
+        <li class="active make-post"><a href="https://www.facebook.com/groups/199456403537988/">Make a Post</a></li>
         <!-- Make a post modal -->
         <div id="post-modal" class="reveal-modal" data-reveal>
           <h2>Awesome. I have it.</h2>

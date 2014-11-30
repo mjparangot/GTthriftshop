@@ -1,3 +1,7 @@
 .container {
 	margin: 30px;
 }
+
+.make-post a {
+	background: #008C4E;
+}
