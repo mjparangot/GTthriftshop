@@ -11,12 +11,14 @@
 	border-radius: 10px 10px 10px 10px;
 }
 
-.pricing-table.item-image > img {
+.pricing-table .item-image > img {
 	width: 100%;
 	height: 100%;
 }
 
-.pricing-table.description {
+.pricing-table .description {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
 	color: #333;
 	font-size: 13px;
