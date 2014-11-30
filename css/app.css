@@ -26,5 +26,6 @@
 	font-size: 13px;
 	line-height: 17px;
 	word-wrap: break-word;
-	background-color: none;
+	border-bottom: none;
+	background: none;
 }

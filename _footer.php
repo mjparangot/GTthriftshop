@@ -12,32 +12,34 @@
       });
       
       var $iso_container = $('.container');
-		// init
-		$iso_container.isotope({
-		// options
-		itemSelector: '.sale-item'
-		});
+  		// init
+  		$iso_container.isotope({
+    		// options
+    		itemSelector: '.sale-item'
+  		});
+
+      $container.masonry('reloadItems');
 		
-		$('#searchpanel').submit(submitSearch);
-		
-		function submitSearch() {
-			/*
-			var text = $('#searchbar').val();
-			
-			if (text == '') {
-				$iso_container.isotope({ filter: '*' })
-			} else {
-				$iso_container.isotope({ filter: function() {
-					if ($(this).text().toLowerCase().indexOf($('#searchbar').val()) >= 0)
-						return true;
-					else
-						return false;
-				}
-			});
-			}
-			*/
-			return true;
-		}
+  		$('#searchpanel').submit(submitSearch);
+  		
+  		function submitSearch() {
+  			/*
+  			var text = $('#searchbar').val();
+  			
+  			if (text == '') {
+  				$iso_container.isotope({ filter: '*' })
+  			} else {
+  				$iso_container.isotope({ filter: function() {
+  					if ($(this).text().toLowerCase().indexOf($('#searchbar').val()) >= 0)
+  						return true;
+  					else
+  						return false;
+  				}
+  			});
+  			}
+  			*/
+  			return true;
+  		}
     </script>
     <script type="text/javascript">
         $(document).foundation();
