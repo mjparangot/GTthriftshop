@@ -61,7 +61,8 @@
     				if (!user.existed()) {
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
-     		 			alert("User logged in through Facebook! access token:");
+     		 			alert("You have logged in through Facebook!");
+     		 			$('#fb-button').hide();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
