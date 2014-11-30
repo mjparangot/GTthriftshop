@@ -4,7 +4,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">GT Thrift Shop</a></h1>
+          <h1><a href="gt-thrift-shop-test.herokuapp.com">GT Thrift Shop</a></h1>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -79,7 +79,7 @@
 			?>
     			<li class="sale-item">
     				<ul class="pricing-table">  
-              <li class="bullet-item item-image"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
+              <li class="item-image"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
     					<!--
               <li class="title"><?= $item['name'] ?></li>
     					<li class="price">
