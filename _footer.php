@@ -70,10 +70,6 @@
   				}
 			});
   		};
-  		
-  		function isLoggedIn(){
-  			return false;
-  		}
   	
  		(function(d, s, id){
     		var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,8 +89,12 @@
         		$(".error").show();
       		}
     	});
-    	
-    	if (isLoggedIn())
+    	  		
+  		function isLoggedIn(){
+  			return true;
+  		}
+  		
+    	if (!isLoggedIn())
 			$('#fb-button').hide();
     
     </script>
