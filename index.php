@@ -15,7 +15,7 @@
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
           <?php
-		  if (false) {
+		  if (isLoggedIn()) {
 		  ?>
 			<li class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
           <? } ?>
