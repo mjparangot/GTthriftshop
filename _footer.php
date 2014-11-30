@@ -42,6 +42,8 @@
     <script type="text/javascript">
         $(document).foundation();
         
+        console.log ("don't display");
+        
         Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 		window.fbAsyncInit = function() {
     		Parse.FacebookUtils.init({ // this line replaces FB.init({
@@ -94,7 +96,7 @@
   			return true;
   		}
   		
-    	if (!isLoggedIn())
+    	if (isLoggedIn())
 			$('#fb-button').hide();
     
     </script>
