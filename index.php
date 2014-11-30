@@ -53,12 +53,12 @@
         <ul class="left">
           <li class="has-form">
             <div class="row collapse">
-              <form id="searchpanel" target="#">
+              <form id="searchpanel" action="" method="get">
 				  <div class="large-8 small-9 columns">
-					<input id="searchbar" type="text" placeholder="Find Stuff">
+					<input id="searchbar" name="search" type="text" placeholder="Find Stuff">
 				  </div>
 				  <div class="large-4 small-3 columns">
-					<a id="searchbutton" href="#" class="alert button expand">Search</a>
+					<input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
 				  </div>
               </form>
             </div>
@@ -71,7 +71,10 @@
   <div class="container">
     <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 			<?
-				$items = getAllItems();
+				if (!isset($_GET['search']) || $_GET['search'] == '')
+					$items = getAllItems();
+				else
+					$items = getSelectedItems($_GET['search']);
 				foreach ($items as $item) {
 			?>
     			<li class="sale-item">
@@ -86,7 +89,7 @@
                   //else
                   //  echo '$' . $item['price']; 
                 ?>
-              </li>  
+              </li>
               -->
     					<li class="description"><?= $item['description'] ?></li>					
               <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
