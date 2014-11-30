@@ -19,9 +19,9 @@
 		});
 		
 		$('#searchpanel').submit(submitSearch);
-		$('#searchbutton').click(submitSearch);
 		
 		function submitSearch() {
+			/*
 			var text = $('#searchbar').val();
 			
 			if (text == '') {
@@ -35,8 +35,8 @@
 				}
 			});
 			}
-			
-			return false;
+			*/
+			return true;
 		}
     </script>
     <script type="text/javascript">
