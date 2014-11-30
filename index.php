@@ -14,8 +14,7 @@
         <ul class="right">
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
-          <li id="fb-login" class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
-          <li id="fb-logout" class="active hidden-element"><a href="#" onclick="logoutWithFacebook()">Logout</a></li>
+          <li id="fb-button" class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
           <li class="divider"></li>
           <li class="active make-post"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
           <!-- Make a post modal -->
@@ -51,20 +50,18 @@
           </div>
         </ul>
         <!-- Left Nav Section -->
-        <ul class="left">
-          <li class="has-form">
-            <div class="row collapse">
-              <form id="searchpanel" action="" method="get">
-				  <div class="large-8 small-9 columns">
-					<input id="searchbar" name="search" type="text" placeholder="Find Stuff">
-				  </div>
-				  <div class="large-4 small-3 columns">
-					<input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
-				  </div>
-              </form>
-            </div>
-          </li>
-        </ul>
+        <div class="has-form">
+          <div class="row collapse">
+            <form id="searchpanel" action="" method="get">
+    				  <div class="large-8 small-9 columns">
+                <input id="searchbar" name="search" type="text" placeholder="Find Stuff">
+    				  </div>
+    				  <div class="large-4 small-3 columns">
+                <input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
+    				  </div>
+            </form>
+          </div>
+        </div>
       </section>
     </nav>
   </div>
