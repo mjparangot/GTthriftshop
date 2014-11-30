@@ -21,68 +21,26 @@
           <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
           <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
           <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label
-                <input type="text" placeholder="large-12.columns" />
-              </label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 columns">
-              <label>Input Label
-                <input type="text" placeholder="large-4.columns" />
-              </label>
-            </div>
-            <div class="large-4 columns">
-              <label>Input Label
-                <input type="text" placeholder="large-4.columns" />
-              </label>
-            </div>
-            <div class="large-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>Name
+                  <input type="text" placeholder="Name of item being sold" />
+                </label>
+                <div class="large-6 columns">
+                  <label>Price
+                    <input type="text" placeholder="Asking price" />
+                  </label>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </label>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Description
+                  <textarea placeholder="Description of item being sold"></textarea>
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
-            </div>
-            <div class="large-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label
-                <textarea placeholder="small-12.columns"></textarea>
-              </label>
-            </div>
-          </div>
-        </form>
+          </form>
           <p>You can attach images in Facebook before you post to the group.</p>
           <a class="close-reveal-modal">&#215;</a>
         </div>

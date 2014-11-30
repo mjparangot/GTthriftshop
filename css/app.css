@@ -2,6 +2,6 @@
 	margin: 30px;
 }
 
-.make-post a {
-	background: #008C4E;
+.make-post > a {
+	background: #008C4E !important;
 }
