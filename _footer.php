@@ -51,6 +51,24 @@
       			cookie     : true, // enable cookies to allow Parse to access the session
       			xfbml      : true
    			 });
+   			 
+   			function isLoggedIn(){
+  			FB.Event.subscribe('auth.authResponseChange', function(response) {
+    		// Here we specify what we do with the response anytime this event occurs. 
+    			if (response.status === 'connected') {
+      				// logged into the app
+    				alert('logged');
+    				$('#fb-button').hide();
+    			} else if (response.status === 'not_authorized') {
+      				// In this case, the person is logged into Facebook, but not into the app
+    				alert('not authorized but logged into fb');
+    				$('#fb-button').hide();
+   	 			} else {
+      				// not logged into Facebook
+    				alert('not logged');
+    			}
+  			});
+  		};
    		};
    			 
         function loginWithFacebook(){
@@ -89,30 +107,10 @@
         		$(".error").show();
       		}
     	});
-    	  		
-  		console.log("here");
   			
-  		function isLoggedIn(){
-  			FB.Event.subscribe('auth.authResponseChange', function(response) {
-    		// Here we specify what we do with the response anytime this event occurs. 
-    			if (response.status === 'connected') {
-      				// logged into the app
-    				alert('logged');
-    				return true;
-    			} else if (response.status === 'not_authorized') {
-      				// In this case, the person is logged into Facebook, but not into the app
-    				alert('not authorized but logged into fb');
-    				return true;
-   	 			} else {
-      				// not logged into Facebook
-    				alert('not logged');
-    				return false;
-    			}
-  			});
-  		};
   		
-    	if (isLoggedIn())
-			$('#fb-button').hide();
+    	//if (isLoggedIn())
+		//	$('#fb-button').hide();
     
     </script>
   </body>
