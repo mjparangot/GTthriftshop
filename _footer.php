@@ -55,7 +55,6 @@
    			 });
    		};
    			 
-   			 
         function loginWithFacebook(){
     		// Run code after the Facebook SDK is loaded.
       		Parse.FacebookUtils.logIn(null, {
@@ -81,6 +80,7 @@
     		js.src = "//connect.facebook.net/en_US/all.js";
     		fjs.parentNode.insertBefore(js, fjs);
   		}(document, 'script', 'facebook-jssdk'));
+  		
    		var TestObject = Parse.Object.extend("TestObject");
     	var testObject = new TestObject();
       	testObject.save({foo: "bar"}, {
@@ -91,7 +91,6 @@
         		$(".error").show();
       		}
     	});
-    }
     
     </script>
   </body>
