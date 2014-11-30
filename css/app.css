@@ -11,7 +11,7 @@
 	border-radius: 10px 10px 10px 10px;
 }
 
-.item-image {
+.item-image > img {
 	width: 100%;
 	height: 100%;
 }
