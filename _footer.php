@@ -8,36 +8,39 @@
       var msnry = new Masonry( container, {
         // options
         //columnWidth: 200,
-        itemSelector: '.sale-item'
+        itemSelector: '.sale-item',
+        isAnimated: true
       });
       
       var $iso_container = $('.container');
-		// init
-		$iso_container.isotope({
-		// options
-		itemSelector: '.sale-item'
-		});
+  		// init
+  		$iso_container.isotope({
+    		// options
+    		itemSelector: '.sale-item'
+  		});
+
+      $container.masonry('reloadItems');
 		
-		$('#searchpanel').submit(submitSearch);
-		
-		function submitSearch() {
-			/*
-			var text = $('#searchbar').val();
-			
-			if (text == '') {
-				$iso_container.isotope({ filter: '*' })
-			} else {
-				$iso_container.isotope({ filter: function() {
-					if ($(this).text().toLowerCase().indexOf($('#searchbar').val()) >= 0)
-						return true;
-					else
-						return false;
-				}
-			});
-			}
-			*/
-			return true;
-		}
+  		$('#searchpanel').submit(submitSearch);
+  		
+  		function submitSearch() {
+  			/*
+  			var text = $('#searchbar').val();
+  			
+  			if (text == '') {
+  				$iso_container.isotope({ filter: '*' })
+  			} else {
+  				$iso_container.isotope({ filter: function() {
+  					if ($(this).text().toLowerCase().indexOf($('#searchbar').val()) >= 0)
+  						return true;
+  					else
+  						return false;
+  				}
+  			});
+  			}
+  			*/
+  			return true;
+  		}
     </script>
     <script type="text/javascript">
         $(document).foundation();
@@ -60,9 +63,10 @@
     				if (!user.existed()) {
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
-     		 			alert("User logged in through Facebook! access token:");
+     		 			alert("You have logged in through Facebook!");
+     		 			$('#fb-button').hide();
      		 			//ACCESS TOKEN -
-     		 			alert(Parse.User.current().get('authData')['facebook']['access_token']);
+     		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
   				},
  		 		error: function(user, error) {
@@ -89,15 +93,10 @@
         		$(".error").show();
       		}
     	});
-    	  		
-  		console.log("here");
   			
-  		function isLoggedIn(){
-  			return user.existed();
-  		}
   		
-    	if (isLoggedIn())
-			$('#fb-button').hide();
+    	//if (isLoggedIn())
+		//	$('#fb-button').hide();
     
     </script>
   </body>
