@@ -42,6 +42,8 @@
             </div>
           </form>
           <p>You can attach images in Facebook before you post to the group.</p>
+          <a href="#" class="button">Add Another Item</a>
+          <a href="#" class="button">Submit</a>
           <a class="close-reveal-modal">&#215;</a>
         </div>
       </ul>
