@@ -78,6 +78,7 @@
   		
   		function logoutWithFacebook(){
   		  	alert("logging out");
+  		  	Parse.User.current();
   			ParseUser.getCurrentUser().logOut();
   		};
   	

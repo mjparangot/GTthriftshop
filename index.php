@@ -14,6 +14,13 @@
         <ul class="right">
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
+<<<<<<< HEAD
+=======
+          <li id="fb-login" class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
+          <li id="fb-logout" class="active hidden-element"><a href="#" onclick="logoutWithFacebook()">Logout</a><li>
+          <li class="divider"></li>
+          <li class="active make-post"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
+>>>>>>> f1c96e98c82a20e2acfc795ee84a77e38b269e47
           <!-- Make a post modal -->
           <div id="post-modal" class="reveal-modal" data-reveal>
             <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
