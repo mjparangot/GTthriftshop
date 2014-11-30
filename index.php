@@ -73,7 +73,7 @@
 			?>
     			<li class="sale-item">
     				<ul class="pricing-table">  
-              <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
+              <li class="bullet-item item-image"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
     					<!--
               <li class="title"><?= $item['name'] ?></li>
     					<li class="price">

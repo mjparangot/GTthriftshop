@@ -3,10 +3,19 @@
 }
 
 .make-post > a {
-	background: #008C4E !important;
+	background: #008C4E;
 }
 
 .sale-item {
 	-webkit-border-radius: 10px 10px 10px 10px;
 	border-radius: 10px 10px 10px 10px;
+}
+
+.item-image {
+	padding: 0;
+}
+
+.item-image > img {
+	width: 100%;
+	height: 100%;
 }
