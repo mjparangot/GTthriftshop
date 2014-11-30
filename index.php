@@ -15,12 +15,12 @@
         <!-- If they are not logged into Facebook, show login button -->
         <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
         <li class="active"><a onclick="loginWithFacebook()">Login with Facebook</a></li>
-        <li class="active make-post"><a href="https://www.facebook.com/groups/199456403537988/">Make a Post</a></li>
+        <li class="active"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
         <!-- Make a post modal -->
         <div id="post-modal" class="reveal-modal" data-reveal>
-          <h2>Awesome. I have it.</h2>
-          <p class="lead">Your couch.  It is mine.</p>
-          <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+          <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
+          <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
+          <p>You can attach images in Facebook before you post to the group.</p>
           <a class="close-reveal-modal">&#215;</a>
         </div>
       </ul>
