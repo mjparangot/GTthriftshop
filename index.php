@@ -14,7 +14,8 @@
         <ul class="right">
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
-          <li id="fb-button" class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
+          <li id="fb-login" class="active"><a href="#" onclick="loginWithFacebook()">Login with Facebook</a></li>
+          <li id="fb-logout" class="active hidden-element"><a href-"#" onclick="logoutWithFacebook()">Logout</a></li>
           <li class="divider"></li>
           <li class="active make-post"><a href="#" data-reveal-id="post-modal">Make a Post</a></li>
           <!-- Make a post modal -->
