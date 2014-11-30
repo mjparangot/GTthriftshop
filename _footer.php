@@ -59,22 +59,6 @@
       			cookie     : true, // enable cookies to allow Parse to access the session
       			xfbml      : true
    			 });
-   			 
-  			FB.Event.subscribe('auth.authResponseChange', function(response) {
-    		// Here we specify what we do with the response anytime this event occurs. 
-    			if (response.status === 'connected') {
-      				// logged into the app
-    				alert('logged');
-    				$('#fb-button').hide();
-    			} else if (response.status === 'not_authorized') {
-      				// In this case, the person is logged into Facebook, but not into the app
-    				alert('not authorized but logged into fb');
-    				$('#fb-button').hide();
-   	 			} else {
-      				// not logged into Facebook
-    				alert('not logged');
-    			}
-  			});
    		};
    			 
         function loginWithFacebook(){
