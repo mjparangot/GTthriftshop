@@ -19,8 +19,6 @@
     		// options
     		itemSelector: '.sale-item'
   		});
-
-      $container.masonry('reloadItems');
 		
   		$('#searchpanel').submit(submitSearch);
   		
