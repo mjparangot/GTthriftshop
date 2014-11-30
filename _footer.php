@@ -4,6 +4,7 @@
     <script src="js/masonry.pkgd.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script>
+      $(document).foundation();
       var container = document.querySelector('.container');
       var msnry = new Masonry( container, {
         // options
@@ -43,7 +44,6 @@
   		}
     </script>
     <script type="text/javascript">
-        $(document).foundation();
         
         Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
 		window.fbAsyncInit = function() {
