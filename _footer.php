@@ -77,8 +77,8 @@
   		};
   		
   		function logoutWithFacebook(){
+  		  	alert("logging out");
   			Parse.User.logout();
-  			alert("logging out");
   		}
   	
  		(function(d, s, id){
