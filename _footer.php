@@ -5,6 +5,15 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script>
       $(document).foundation();
+      var container = document.querySelector('.container');
+      var msnry = new Masonry( container, {
+        // options
+        //columnWidth: 200,
+        itemSelector: '.sale-item',
+        isAnimated: true
+      });
+      
+      msnry.reloadItems();
       
       var $iso_container = $('.container');
   		// init
@@ -55,8 +64,7 @@
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
-     		 			$('#fb-login').hide();
-     		 			$('#fb-logout').show();
+     		 			$('#fb-button').hide();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
