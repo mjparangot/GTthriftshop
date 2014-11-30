@@ -93,6 +93,9 @@
         		$(".error").show();
       		}
     	});
+    	
+    	if (isLoggedIn())
+			$('#fb-button').hide();
     
     </script>
   </body>
