@@ -2,6 +2,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script>
       var container = document.querySelector('.container');
       var msnry = new Masonry( container, {
@@ -9,6 +10,34 @@
         //columnWidth: 200,
         itemSelector: '.sale-item'
       });
+      
+      var $iso_container = $('.container');
+		// init
+		$iso_container.isotope({
+		// options
+		itemSelector: '.sale-item'
+		});
+		
+		$('#searchpanel').submit(submitSearch);
+		$('#searchbutton').click(submitSearch);
+		
+		function submitSearch() {
+			var text = $('#searchbar').val();
+			
+			if (text == '') {
+				$iso_container.isotope({ filter: '*' })
+			} else {
+				$iso_container.isotope({ filter: function() {
+					if ($(this).text().toLowerCase().indexOf($('#searchbar').val()) >= 0)
+						return true;
+					else
+						return false;
+				}
+			});
+			}
+			
+			return false;
+		}
     </script>
     <script type="text/javascript">
         $(document).foundation();

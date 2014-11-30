@@ -53,12 +53,14 @@
         <ul class="left">
           <li class="has-form">
             <div class="row collapse">
-              <div class="large-8 small-9 columns">
-                <input type="text" placeholder="Find Stuff">
-              </div>
-              <div class="large-4 small-3 columns">
-                <a href="#" class="alert button expand">Search</a>
-              </div>
+              <form id="searchpanel" target="#">
+				  <div class="large-8 small-9 columns">
+					<input id="searchbar" type="text" placeholder="Find Stuff">
+				  </div>
+				  <div class="large-4 small-3 columns">
+					<a id="searchbutton" href="#" class="alert button expand">Search</a>
+				  </div>
+              </form>
             </div>
           </li>
         </ul>
