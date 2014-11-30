@@ -63,6 +63,7 @@
    			 		} else {
      		 			alert("You have logged in through Facebook!");
      		 			$('#fb-login').hide();
+     		 			$('#fb-logout').show();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
