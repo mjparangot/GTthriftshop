@@ -44,18 +44,19 @@
         
         console.log ("changed");
         
-                	Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
-			window.fbAsyncInit = function() {
-    			Parse.FacebookUtils.init({ // this line replaces FB.init({
-      				appId      : '507863555984054', // Facebook App ID
-      				//status     : true, // check Facebook Login status
-      				version    : 'v1.0',
-      				cookie     : true, // enable cookies to allow Parse to access the session
-      				xfbml      : true
+        Parse.initialize("6B6ut2PB7V6850Lb9b96txrM9BU7iWCpEBuoyRjH", "tbPvSvs4uCPn35NMauQSA1TTqsg3EfU2oiLn2rPm");
+		window.fbAsyncInit = function() {
+    		Parse.FacebookUtils.init({ // this line replaces FB.init({
+      			appId      : '507863555984054', // Facebook App ID
+      			//status     : true, // check Facebook Login status
+      			version    : 'v1.0',
+      			cookie     : true, // enable cookies to allow Parse to access the session
+      			xfbml      : true
    			 });
+   		};
+   			 
    			 
         function loginWithFacebook(){
- 
     		// Run code after the Facebook SDK is loaded.
       		Parse.FacebookUtils.logIn(null, {
   				success: function(user) {
