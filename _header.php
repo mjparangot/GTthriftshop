@@ -25,4 +25,3 @@
  	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 
   </head>
-  <body>
