@@ -90,9 +90,9 @@
                   //  echo '$' . $item['price']; 
                 ?>
               </li>
+              <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
               -->
     					<li class="description"><?= $item['description'] ?></li>					
-              <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
     				</ul>
     			</li>
 			<?
