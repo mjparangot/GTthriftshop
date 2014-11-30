@@ -54,10 +54,10 @@
           <li class="has-form">
             <div class="row collapse">
               <form id="searchpanel" action="" method="get">
-      				  <div class="large-8 small-9 columns">
+      				  <div class="large-12 small-9 columns">
                   <input id="searchbar" name="search" type="text" placeholder="Find Stuff">
       				  </div>
-      				  <div class="large-4 small-3 columns">
+      				  <div class="small-3 columns">
                   <input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
       				  </div>
               </form>
