@@ -5,3 +5,8 @@
 .make-post > a {
 	background: #008C4E !important;
 }
+
+.sale-item {
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
