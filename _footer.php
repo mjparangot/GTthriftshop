@@ -73,7 +73,7 @@
   		
   		function isLoggedIn(){
   			console.log("true");
-  			return true;
+  			return false;
   		}
   	
  		(function(d, s, id){
