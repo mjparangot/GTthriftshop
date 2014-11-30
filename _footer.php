@@ -9,12 +9,7 @@
         // options
         //columnWidth: 200,
         itemSelector: '.sale-item',
-        isAnimated: true,
-        animationOptions: {
-          duration: 750,
-          easing: 'linear',
-          queue: false
-        }
+        isAnimated: true
       });
       
       var $iso_container = $('.container');
