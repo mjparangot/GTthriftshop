@@ -13,6 +13,8 @@
         isAnimated: true
       });
       
+      msnry.reloadItems();
+      
       var $iso_container = $('.container');
   		// init
   		$iso_container.isotope({
@@ -62,8 +64,7 @@
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
-     		 			$('#fb-login').hide();
-     		 			$('#fb-logout').show();
+     		 			$('#fb-button').hide();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
