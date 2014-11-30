@@ -14,6 +14,7 @@
     <!-- Foundation -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/foundation.css">
+    <script src="js/foundation.min.js"></script>
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/app.css">
