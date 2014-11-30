@@ -70,8 +70,9 @@
 				foreach ($items as $item) {
 			?>
     			<li class="sale-item">
-    				<ul class="pricing-table">                        
-    					<li class="title"><?= $item['name'] ?></li>
+    				<ul class="pricing-table">  
+              <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
+    					<!--<li class="title"><?= $item['name'] ?></li>-->
     					<li class="price">
               <? 
                 if ($item['price'] == -1)
@@ -81,9 +82,7 @@
               ?>
               </li>
     					<li class="description"><?= $item['description'] ?></li>
-    					<li class="bullet-item"><?= $item['status'] ?></li>
-              <li class="bullet-item"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
-    					<li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
+    					<li class="bullet-item"><?= $item['status'] ?></li>    					<li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
     				</ul>
     			</li>
 			<?
