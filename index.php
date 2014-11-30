@@ -99,6 +99,10 @@
 			<?
         }
 			?>
+      <script>
+        var container = document.querySelector('.container');
+        $container.masonry('reloadItems');
+      </script>
     </ul>
   </div>
     
