@@ -72,7 +72,6 @@
   		};
   		
   		function isLoggedIn(){
-  			console.log("true");
   			return false;
   		}
   	
