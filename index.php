@@ -96,7 +96,15 @@
               </li>
               <li class="cta-button"><a class="button" href="<?= $item['postlink'] ?>" target="_blank">View Post</a></li>
               -->
-    					<li class="description"><?= $item['description'] ?></li>					
+    					<li class="description"><?= $item['description'] ?></li>
+              <li class="price">
+                <? 
+                  if ($item['price'] == -1)
+                    echo 'Price in description';
+                  else
+                    echo '$' . $item['price']; 
+                ?>
+              </li>
     				</ul>
     			</li>
 			<?
