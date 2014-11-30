@@ -100,7 +100,13 @@
 			?>
       <script>
         var container = document.querySelector('.container');
-        $container.masonry('reloadItems');
+        var msnry = new Masonry( container, {
+          // options
+          //columnWidth: 200,
+          itemSelector: '.sale-item',
+          isAnimated: true
+        });
+        msnry.reloadItems();
       </script>
     </ul>
   </div>

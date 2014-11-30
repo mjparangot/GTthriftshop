@@ -5,13 +5,6 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script>
       $(document).foundation();
-      var container = document.querySelector('.container');
-      var msnry = new Masonry( container, {
-        // options
-        //columnWidth: 200,
-        itemSelector: '.sale-item',
-        isAnimated: true
-      });
       
       var $iso_container = $('.container');
   		// init
