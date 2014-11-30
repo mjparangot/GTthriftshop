@@ -8,7 +8,13 @@
       var msnry = new Masonry( container, {
         // options
         //columnWidth: 200,
-        itemSelector: '.sale-item'
+        itemSelector: '.sale-item',
+        isAnimated: true,
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        }
       });
       
       var $iso_container = $('.container');
