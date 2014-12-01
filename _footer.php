@@ -31,8 +31,8 @@
       });
 
       imagesLoaded( container, function() {
-        msnry.reloadItems();
-        setOrbit();
+        //msnry.reloadItems();
+        //setOrbit();
       });
 
       var $iso_container = $('#container');
