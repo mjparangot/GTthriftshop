@@ -14,7 +14,7 @@
       });
 
       imagesLoaded( container, function() {
-        msnry.layout();
+        msnry.reloadItems();
       });
 
       
