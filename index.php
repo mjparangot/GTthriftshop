@@ -2,15 +2,14 @@
 <body>
 
 	<!-- Facebook Send Button -->
-	<div id="fb-root"></div>
-	<script>(
-	function(d, s, id) {
- 		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=507863555984054&version=v2.0";
-  		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=507863555984054&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <div class="sticky">
     <nav class="top-bar" data-topbar role="navigation">
@@ -59,7 +58,6 @@
             <p>You can attach images in Facebook before you post to the group.</p>
             <a href="#" class="button">Add Another Item</a>
             <a href="#" class="button">Submit</a>
-            <div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-colorscheme="light"></div>
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </ul>
@@ -103,7 +101,7 @@
         					$array_of_pics = array();
         					
         					if ($item['picture'] == '')
-        						$array_of_pics[] = 'http://lorempixel.com/800/600/abstract';
+        						$array_of_pics[] = 'http://placehold.it/185x150';
         					// else if it's an album of pics
         					else if (strpos($item['picture'], ',') !== FALSE) {
         						$array_of_pics = explode(',', $item['picture']);
@@ -118,7 +116,7 @@
         						if (strpos($pic, '://') === FALSE)
         							$url = "https://graph.facebook.com/".$pic."/picture";
         						else
-        							$url = $pic;
+        							$url = "http://lorempixel.com/800/600/abstract";
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
