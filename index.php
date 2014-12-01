@@ -14,7 +14,7 @@
         <ul class="right">
           <!-- If they are not logged into Facebook, show login button -->
           <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
-          <a href="#" id="fb-button" class="button active" onclick="loginWithFacebook()">Login with Facebook</a>
+          <a href="#" id="fb-login" class="button active" onclick="loginWithFacebook()">Login with Facebook</a>
   <a href="#" id="fb-logout" class="button active hidden-element" onclick="logoutWithFacebook()">Logout</a>
   <a href="#" id="make-post-button" class="button active make-post hidden-element" data-reveal-id="post-modal">Make a Post</a>
   <a href="#" id="make-post-button-disabled" class="button transparent-element" onclick="alert('You must be logged in to make a post!');">Make a Post</a>
