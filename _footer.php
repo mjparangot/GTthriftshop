@@ -15,9 +15,9 @@
       
       $( window ).load(function() {
         console.log( "window loaded" );
+        msnry.reloadItems();
       });
 
-      msnry.reloadItems();
       
       var $iso_container = $('.container');
   		// init
