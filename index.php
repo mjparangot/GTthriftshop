@@ -152,9 +152,7 @@
             <? 
               if ($item['price'] != -1)
                 echo '<li class="price">$'.$item['price'].'</li>';
-              else
             ?>
-                <a href="<?=$item['postlink']?>" target="_blank" class="button radius round">View Post</a>
   				</ul>
   			</li>
 			<?
