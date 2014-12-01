@@ -7,10 +7,28 @@
 		return $items;
 	}
 	
+	function getSpecificItem($id) {
+		$item = runQuery('SELECT * FROM "items" WHERE id = '.intval($id));
+		return $item;
+	}
+	
 	function getAllItems($start = 0) {
 		$start = intval($start);
 		$items = runQuery('SELECT * FROM "items" ORDER BY startdate DESC  OFFSET '.$start.' LIMIT 20');
 		return $items;
+	}
+	
+	function addItemToDB($name, $description, $price, $picture = "", $seller = "", $status = 'For sale') {
+		$name = pg_escape_literal($name);
+		$description = pg_escape_literal($description);
+		$picture = pg_escape_literal($picture);
+		$seller = pg_escape_literal($seller);
+		$status = pg_escape_literal($status);
+		$price = floatval($price);
+		
+		$query = 'INSERT INTO "items" (name,description,picture,seller,status,price) VALUES ('."$name,$description,$picture,$seller,$status,$price)";
+		
+		runQuery($query);
 	}
 	
 	function runQuery($query) {
