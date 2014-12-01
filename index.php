@@ -61,22 +61,22 @@
                 </div>
               </div>
             </form>
-            <!-- <a href="#" class="button">Submit</a> -->
             <a href="#" class="button" data-reveal-id="fb-send-modal">Submit</a>
-            <!-- <a href="#" id="submit-button" class="button active make-post hidden-element" data-reveal-id="fb-send-modal">Submit</a>
-        	<a href="#" id="submit-button-disabled" class="button transparent-element" onclick="alert('You must fill all the fields!');">Submit</a> -->
             
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
-            Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!
- 			<center><div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div></center>
+              Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!
+ 			        <center>
+                <div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div>
+              </center>
  			
- 			<a class="close-reveal-modal">&#215;</a>
-			</div>
+ 			        <a class="close-reveal-modal">&#215;</a>
+            </div>
             
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </ul>
+
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="has-form">
@@ -84,9 +84,6 @@
               <form id="searchpanel" action="" method="get">
       				  <div class="large-8 small-9 columns">
                   <input id="searchbar" name="search" type="text" placeholder="Find Stuff">
-      				  </div>
-      				  <div class="large-4 small-3 columns">
-                  <input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
       				  </div>
               </form>
             </div>
