@@ -17,6 +17,7 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/vendor/modernizr.js"></script>
     

@@ -55,17 +55,37 @@
       			xfbml      : true
    			 });
    		};
+   		
+   		function isLoggedIn() {
+			if (user.existed())
+				return true;
+			else
+				return false;
+		}
+		
+		function loginStuff() {
+			$('#fb-login').hide();
+     		$('#fb-logout').show();
+     		$('#make-post-button').show();
+     		$('#make-post-button-disabled').hide();
+		}
+		
+		function logoutStuff() {
+			$('#fb-login').show();
+     		$('#fb-logout').hide();
+     		$('#make-post-button').hide();
+     		$('#make-post-button-disabled').show();
+		}
    			 
         function loginWithFacebook(){
     		// Run code after the Facebook SDK is loaded.
       		Parse.FacebookUtils.logIn(null, {
   				success: function(user) {
-    				if (!user.existed()) {
+    				if (!isLoggedIn()) {
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
-     		 			$('#fb-login').hide();
-     		 			$('#fb-logout').show();
+     		 			loginStuff();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
     				}
@@ -103,8 +123,10 @@
       		}
     	});
   			
-    	//if (isLoggedIn())
-		//	$('#fb-button').hide();
+    	if (isLoggedIn())
+			loginStuff();
+		else
+			logoutStuff();
     
     </script>
   </body>
