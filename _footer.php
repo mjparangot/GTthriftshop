@@ -18,7 +18,8 @@
           bullets: false,
           navigation_arrows: false,
           slide_number_class: 'orbit-slide-number',
-          timer_progress_class: 'orbit-progress'
+          timer_progress_class: 'orbit-progress',
+          timer_container_class: 'orbit-timer'
         }
       });
       var container = document.querySelector('#container');
