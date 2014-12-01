@@ -12,9 +12,14 @@
         isAnimated: true
       });
 
-      container.imagesLoaded( function() {
-        msnry.layout();
-      });
+       jQuery(function(){
+         var $cont = $('.container');
+         $cont.imagesLoaded( function () {
+            //itemSelector: '.sale-item',
+            //isAnimated: true
+            msnry.reloadItems();
+         });
+        });
 
       
       var $iso_container = $('.container');
