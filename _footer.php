@@ -164,17 +164,19 @@
 			
 		// Scrolling stuff
 		var gettingFromScroll = false;
+		
+		<?
+			// don't do the scrolling thing if we're searching
+			if (!isset($_GET['search'])) {
+		?>
 		$(window).scroll(function() {
 		   if($(window).scrollTop() + $(window).height() > $(document).height() - 150 && gettingFromScroll == false) {
-			   console.log('gonna get');
 			   gettingFromScroll = true;
 			   $.get( "__get.php?type=get_posts&start="+$('.sale-item').length, function( data ) {
-				  console.log('got');
 				  data = $.parseHTML(data);
 				  data = $.grep(data, function(elem) {
 					return elem.nodeName != "#text";
 				  });
-				  console.log(data);
 				  $(container).append(data);
 				  msnry.appended(data);
 				  setOrbit();
@@ -183,6 +185,7 @@
 				});
 		   }
 		});
+		<? } ?>
     
     </script>
   </body>
