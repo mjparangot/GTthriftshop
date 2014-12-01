@@ -160,9 +160,18 @@
 			logoutStuff();
 			
 		// Scrolling stuff
+		var gettingFromScroll = false;
 		$(window).scroll(function() {
-		   if($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
-			   alert("near bottom!");
+		   if($(window).scrollTop() + $(window).height() > $(document).height() - 150 && gettingFromScroll == false) {
+			   console.log('gonna get');
+			   gettingFromScroll = true;
+			   $.get( "__get.php?type=get_posts&start="+$('.sale-item').length, function( data ) {
+				  console.log('got');
+				  console.log(data);
+				  $('#container-ul')[0].innerHTML += data;
+				  gettingFromScroll = false;
+				  msnry.layout();
+				});
 		   }
 		});
     
