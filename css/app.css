@@ -69,7 +69,6 @@ body {
 .pricing-table .item-price {
 	border-top: dotted 1px #dddddd;
 	border-bottom: none;
-	background: white;
 	-webkit-border-radius: 0 0 10px 10px;
 	border-radius: 0 0 10px 10px;
 }
