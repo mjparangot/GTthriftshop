@@ -31,10 +31,10 @@
       });
 
       imagesLoaded( container, function() {
-        msnry.layout();
+        //msnry.layout();
       });
 
-      var $iso_container = $('#container');
+      var $iso_container = $('#container-ul');
   		// init
   		$iso_container.isotope({
     		// options
