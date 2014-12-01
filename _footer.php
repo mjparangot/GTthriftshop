@@ -13,8 +13,8 @@
       });
 
        jQuery(function(){
-         var $container = $('.container');
-         $container.imagesLoaded( function () {
+         var $cont = $('.container');
+         $cont.imagesLoaded( function () {
              itemSelector: '.box',
              animate: true
          });
