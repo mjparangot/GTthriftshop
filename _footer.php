@@ -15,8 +15,9 @@
        jQuery(function(){
          var $cont = $('.container');
          $cont.imagesLoaded( function () {
-             itemSelector: '.sale-item',
-             isAnimated: true
+            //itemSelector: '.sale-item',
+            //isAnimated: true
+            msnry.reloadItems();
          });
         });
 
