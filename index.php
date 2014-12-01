@@ -109,9 +109,6 @@
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>"/>
-                        <div class="orbit-caption">
-                          Caption
-                        </div>
                       </li>
         						<?
         					}
@@ -121,7 +118,7 @@
 
             <!-- Item description -->
   					<li class="description"><?= $item['description'] ?></li>
-            
+
             <!-- Item price -->
             <? 
               if ($item['price'] != -1)

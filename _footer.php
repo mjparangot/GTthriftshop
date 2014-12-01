@@ -8,7 +8,7 @@
       $(document).foundation({
         orbit: {
           animation: 'slide',
-          timer_speed: 2000,
+          timer_speed: 7000,
           pause_on_hover: true, // Pauses on the current slide while hovering
           resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
           next_on_click: true, // Advance to next slide on click
@@ -16,7 +16,10 @@
           navigation_arrows: false,
           slide_number: true,
           bullets: false,
-          navigation_arrows: false
+          navigation_arrows: false,
+          timer: false,
+          slide_number_class: 'orbit-slide-number',
+          timer_progress_class: 'orbit-progress'
         }
       });
       var container = document.querySelector('#container');
