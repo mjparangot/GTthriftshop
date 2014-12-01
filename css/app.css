@@ -48,6 +48,11 @@
 	border-bottom: none;
 }
 
+.item-price {
+	border-top: dotted 1px #dddddd;
+	border-bottom: none;
+}
+
 .orbit-slide-number {
 	display: none;
 }

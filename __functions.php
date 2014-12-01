@@ -57,7 +57,7 @@
 				<!-- Item price -->
 				<? 
 				if ($item['price'] > 0) {
-					echo '<li class="price">$'.$item['price'].'</li>';
+					echo '<li class="item-price">$'.$item['price'].'</li>';
 				}
 				else {
 					$price = '';
@@ -67,7 +67,7 @@
 						$price = '$'.$item['price'];
 						
 					if ($item['price'] != 0)
-						echo '<li class="price">'.$price.'</li>';
+						echo '<li class="item-price">'.$price.'</li>';
 				}
 				?>
 			</ul>
