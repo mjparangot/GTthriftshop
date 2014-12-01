@@ -94,7 +94,7 @@
   <!-- If they are logged into Facebook, our webapp accesses their fb automatically -->
   
   <div id="container">
-    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+    <ul id="container-ul" class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 			<?
 				if (!isset($_GET['search']) || $_GET['search'] == '')
 					$items = getAllItems();
