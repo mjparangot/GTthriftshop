@@ -151,7 +151,9 @@
             <!-- Item price -->
             <? 
               if ($item['price'] != -1)
-                echo '<li class="price">$'.$item['price'].'</li>'; 
+                echo '<li class="price">$'.$item['price'].'</li>';
+              else
+                echo '<li class="price">$'.$item['status'].'</li>'
             ?>
   				</ul>
   			</li>
