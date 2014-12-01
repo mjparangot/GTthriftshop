@@ -31,7 +31,7 @@
       });
 
       imagesLoaded( container, function() {
-        //msnry.layout();
+        msnry.layout();
       });
 
       var $iso_container = $('#container-ul');
