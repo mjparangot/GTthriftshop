@@ -60,10 +60,12 @@
    		
    		function isLoggedIn() {
    			alert(Parse.User.current());
-			if (Parse.User.current() != null)
-				return true;
-			else
+			if (Parse.User.current() == null){
+				alert("User shouldn't be logged in");
 				return false;
+			}
+			else
+				return true;
 		}
 		
 		function loginStuff() {
@@ -85,6 +87,7 @@
       		Parse.FacebookUtils.logIn(null, {
   				success: function(user) {
     				if (!isLoggedIn()) {
+    					//User is already logged in
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
