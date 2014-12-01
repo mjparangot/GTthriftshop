@@ -67,7 +67,7 @@
   		
   		function submitMakePost() {
 			$.post( "__post.php", $( "#make-post-form" ).serialize(), function(data) {
-				if data.action == 'alert' {
+				if (data.action == 'alert') {
 					alert(data.text);
 				} else {
 					alert(data.text);
