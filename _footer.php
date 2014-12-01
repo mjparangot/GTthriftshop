@@ -24,7 +24,7 @@
     			}
   		  });
   		}
-      var container = document.querySelector('#container-ul');
+      var container = document.querySelector('#container');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item'
@@ -34,7 +34,7 @@
         msnry.layout();
       });
 
-      var $iso_container = $('#container-ul');
+      var $iso_container = $('#container');
   		// init
   		$iso_container.isotope({
     		// options
@@ -174,10 +174,9 @@
   		  data = $.grep(data, function(elem) {
   			return elem.nodeName != "#text";
   		  });
-  		  $(container).append(data);
-  		  msnry.appended(data);
+  		  $(container).append(data).masonry( 'reload' );
+  		  //msnry.appended(data);
   		  setOrbit();
-  		  //msnry.layout();
   		  gettingFromScroll = false;
   		});
      }
