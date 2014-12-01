@@ -174,8 +174,8 @@
   		  data = $.grep(data, function(elem) {
   			return elem.nodeName != "#text";
   		  });
-  		  $(container).append(data).masonry( 'reload' );
-  		  //msnry.appended(data);
+  		  $("#container-ul").append(data);
+  		  msnry.appended(data);
   		  setOrbit();
   		  gettingFromScroll = false;
   		});
