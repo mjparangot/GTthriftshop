@@ -59,9 +59,7 @@
    		};
    		
    		function isLoggedIn() {
-   			alert(Parse.User.current());
 			if (Parse.User.current() == null){
-				alert("User shouldn't be logged in");
 				return false;
 			}
 			else
@@ -103,11 +101,10 @@
   		};
   		
   		function logoutWithFacebook(){
-  		  	alert("logging out");
-  		  	alert("current "+Parse.User.current());
-  		  	alert("Parse.User()" +Parse.User());
-  		  	alert(Parse.User.logOut());
-  			//ParseUser.getCurrentUser().logOut();
+  		  	FB.logout(function(response) {
+  				//console.log(user is now logged out);
+			});
+			logoutStuff();
   		};
   	
  		(function(d, s, id){
