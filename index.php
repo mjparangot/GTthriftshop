@@ -24,6 +24,7 @@
             <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
             <form enctype="multipart/form-data" action="__post.php" method="post" id="make-post-form">
+              <input id="make-post-seller" type="hidden" name="seller" value=""/>
               <input type="hidden" name="type" value="make_post"/>
               <div class="row">
                 <div class="large-6 columns">

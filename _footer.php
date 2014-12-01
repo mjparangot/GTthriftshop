@@ -66,6 +66,8 @@
   		$('#make-post-form').submit(submitMakePost);
   		
   		function submitMakePost() {
+			$('#make-post-seller').val(Parse.User.current().get('authData')['facebook']['id']);
+			
 			$.post( "__post.php", $( "#make-post-form" ).serialize(), function(data) {
 				data = $.parseJSON(data);
 				if (data.action == 'alert') {
