@@ -64,6 +64,9 @@
 						echo '<li class="price">'.$price.'</li>';
 				}
 				?>
+
+				<!-- Date posted -->
+				<li class="date-posted"><?= $item['startdate'] ?></li>
 			</ul>
 		</li>
 <?
