@@ -83,7 +83,34 @@
 			?>
     			<li class="sale-item">
     				<ul class="pricing-table">  
-              <li class="item-image"><img src="<?= ($item['picture'] == '' ? 'http://placehold.it/185x150' : $item['picture']) ?>"/></li>  
+              
+				  <?
+					$array_of_pics = array();
+					
+					if ($item['picture'] == '')
+						$array_of_pics[] = 'http://placehold.it/185x150';
+					// else if it's an album of pics
+					else if (strpos($item['picture'], ',') !== FALSE) {
+						$array_of_pics = explode(',', $item['picture']);
+					} else {
+						$array_of_pics[] = $item['picture'];
+					}
+					
+					foreach ($array_of_pics as $pic) {
+						if ($pic == '')
+							continue;
+						
+						if (strpos($pic, '://') === FALSE)
+							$url = "https://graph.facebook.com/".$pic."/picture";
+						else
+							$url = $pic;
+						?>
+							<li class="item-image"><img src="<?= $url ?>"/></li>
+						<?
+					}
+				  ?>
+				 
+			   </li>  
     					<!--
               <li class="title"><?= $item['name'] ?></li>
     					<li class="price">
@@ -100,7 +127,7 @@
               
               <? 
                 if ($item['price'] != -1)
-                  echo '<li class="price">"$" . <?= $item['price'] ?></li>'; 
+                  echo '<li class="price">$'.$item['price'].'</li>'; 
               ?>
     				</ul>
     			</li>
