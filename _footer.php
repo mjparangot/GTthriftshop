@@ -6,25 +6,25 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script>
       function setOrbit() {
-		  $(document).foundation({
-			orbit: {
-			  animation: 'slide',
-			  timer_speed: 4000,
-			  pause_on_hover: true, // Pauses on the current slide while hovering
-			  resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
-			  next_on_click: true, // Advance to next slide on click
-			  animation_speed: 500, // Sets the amount of time in milliseconds the transition between slides will last
-			  navigation_arrows: false,
-			  slide_number: true,
-			  bullets: false,
-			  navigation_arrows: false,
-			  slide_number_class: 'orbit-slide-number',
-			  timer_progress_class: 'orbit-progress',
-			  timer_container_class: 'orbit-timer'
-			}
-		  });
-		}
-		setOrbit();
+  		  $(document).foundation({
+    			orbit: {
+    			  animation: 'slide',
+    			  timer_speed: 4000,
+    			  pause_on_hover: true, // Pauses on the current slide while hovering
+    			  resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
+    			  next_on_click: true, // Advance to next slide on click
+    			  animation_speed: 500, // Sets the amount of time in milliseconds the transition between slides will last
+    			  navigation_arrows: false,
+    			  slide_number: true,
+    			  bullets: false,
+    			  navigation_arrows: false,
+    			  slide_number_class: 'orbit-slide-number',
+    			  timer_progress_class: 'orbit-progress',
+    			  timer_container_class: 'orbit-timer'
+    			}
+  		  });
+  		}
+  		setOrbit();
       var container = document.querySelector('#container-ul');
       var msnry = new Masonry( container, {
         // options
@@ -35,6 +35,7 @@
       imagesLoaded( container, function() {
         msnry.reloadItems();
         msnry.layout();
+        setOrbit();
       });
       
       var $iso_container = $('#container');
@@ -43,7 +44,7 @@
     		// options
     		itemSelector: '.sale-item'
   		});
-		
+  	
   		$('#searchpanel').submit(submitSearch);
   		
   		function submitSearch() {
