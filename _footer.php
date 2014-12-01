@@ -50,7 +50,7 @@
     		Parse.FacebookUtils.init({ // this line replaces FB.init({
       			appId      : '507863555984054', // Facebook App ID
       			//status     : true, // check Facebook Login status
-      			//version    : 'v2.0',
+      			version    : 'v2.0',
       			cookie     : true, // enable cookies to allow Parse to access the session
       			xfbml      : true
    			 });
