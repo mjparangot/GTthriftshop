@@ -176,6 +176,7 @@
   		  });
   		  $("#container-ul").append(data);
   		  msnry.appended(data);
+        msnry.layout();
   		  setOrbit();
   		  gettingFromScroll = false;
   		});
