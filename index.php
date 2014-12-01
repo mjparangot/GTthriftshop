@@ -21,7 +21,7 @@
           <a href="#" id="make-post-button-disabled" class="button transparent-element" onclick="alert('You must be logged in to make a post!');">Make a Post</a>
           <!-- Make a post modal -->
           <div id="post-modal" class="reveal-modal" data-reveal>
-            <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
+            <p class="lead">Use this form to create a post on GT Thrift Shop.</p>
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
             <form enctype="multipart/form-data" action="__post.php" method="post" id="make-post-form">
               <input id="make-post-seller" type="hidden" name="seller" value=""/>
