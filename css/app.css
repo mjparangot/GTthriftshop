@@ -43,6 +43,7 @@
 	word-wrap: break-word;
 	border-bottom: none;
 	background: none;
+	padding: 0.9375rem;
 }
 
 .orbit-slide-number {
