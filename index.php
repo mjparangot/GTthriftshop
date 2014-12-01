@@ -2,15 +2,14 @@
 <body>
 
 	<!-- Facebook Send Button -->
-	<div id="fb-root"></div>
-	<script>(
-	function(d, s, id) {
- 		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=507863555984054&version=v2.0";
-  		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=507863555984054&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <div class="sticky">
     <nav class="top-bar" data-topbar role="navigation">
@@ -125,7 +124,7 @@
         						if (strpos($pic, '://') === FALSE)
         							$url = "https://graph.facebook.com/".$pic."/picture";
         						else
-        							$url = $pic;
+        							$url = "http://lorempixel.com/800/600/abstract";
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
