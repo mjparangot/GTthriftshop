@@ -106,7 +106,7 @@
   		  	alert("logging out");
   		  	alert("current "+Parse.User.current());
   		  	FB.logout(function(response) {
-  				alert(user is now logged out);
+  				console.log(user is now logged out);
 			});
   		};
   	
