@@ -25,16 +25,15 @@
   		  });
   		}
   		setOrbit();
+      msnry.layout();
       var container = document.querySelector('#container-ul');
       var msnry = new Masonry( container, {
         // options
-        itemSelector: '.sale-item',
-        isAnimated: true
+        itemSelector: '.sale-item'
       });
 
       imagesLoaded( container, function() {
         msnry.layout();
-        setOrbit();
       });
       
       var $iso_container = $('#container');
