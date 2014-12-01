@@ -112,7 +112,7 @@
         					$array_of_pics = array();
         					
         					if ($item['picture'] == '')
-        						$array_of_pics[] = 'http://placehold.it/185x150';
+        						$array_of_pics[] = 'http://dummyimage.com/600x400/000/ffffff.jpg&text=No+image+available';
         					// else if it's an album of pics
         					else if (strpos($item['picture'], ',') !== FALSE) {
         						$array_of_pics = explode(',', $item['picture']);
@@ -127,7 +127,7 @@
         						if (strpos($pic, '://') === FALSE)
         							$url = "https://graph.facebook.com/".$pic."/picture";
         						else
-        							$url = "http://lorempixel.com/g/800/600/abstract/No%20image%20available";
+        							$url = $pic;
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
