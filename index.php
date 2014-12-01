@@ -103,7 +103,7 @@
 				foreach ($items as $item) {
 			?> 
   			<li class="sale-item">
-  				<ul class="pricing-table">
+  				<ul class="pricing-table" href="<?=$item['postlink']?>" target="_blank">
             <!-- Item image(s) -->
             <li>
               <ul class="image-orbit" data-orbit>
