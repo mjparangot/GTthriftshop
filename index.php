@@ -83,33 +83,46 @@
 			?>
   			<li class="sale-item">
   				<ul class="pricing-table">
-    			  <?
-    					$array_of_pics = array();
-    					
-    					if ($item['picture'] == '')
-    						$array_of_pics[] = 'http://placehold.it/185x150';
-    					// else if it's an album of pics
-    					else if (strpos($item['picture'], ',') !== FALSE) {
-    						$array_of_pics = explode(',', $item['picture']);
-    					} else {
-    						$array_of_pics[] = $item['picture'];
-    					}
-    					
-    					foreach ($array_of_pics as $pic) {
-    						if ($pic == '')
-    							continue;
-    						
-    						if (strpos($pic, '://') === FALSE)
-    							$url = "https://graph.facebook.com/".$pic."/picture";
-    						else
-    							$url = $pic;
-    						?>
-    							<li class="item-image"><img src="<?= $url ?>"/></li>
-    						<?
-    					}
-    			  ?>
+            <!-- Item image(s) -->
+            <li>
+              <ul class="image-orbit" data-orbit>
+        			  <?
+        					$array_of_pics = array();
+        					
+        					if ($item['picture'] == '')
+        						$array_of_pics[] = 'http://placehold.it/185x150';
+        					// else if it's an album of pics
+        					else if (strpos($item['picture'], ',') !== FALSE) {
+        						$array_of_pics = explode(',', $item['picture']);
+        					} else {
+        						$array_of_pics[] = $item['picture'];
+        					}
+        					
+        					foreach ($array_of_pics as $pic) {
+        						if ($pic == '')
+        							continue;
+        						
+        						if (strpos($pic, '://') === FALSE)
+        							$url = "https://graph.facebook.com/".$pic."/picture";
+        						else
+        							$url = $pic;
+        						?>
+        							<li class="item-image">
+                        <img src="<?= $url ?>"/>
+                        <div class="orbit-caption">
+                          Caption
+                        </div>
+                      </li>
+        						<?
+        					}
+        			  ?>
+              </ul>
+            </li>
+
+            <!-- Item description -->
   					<li class="description"><?= $item['description'] ?></li>
             
+            <!-- Item price -->
             <? 
               if ($item['price'] != -1)
                 echo '<li class="price">$'.$item['price'].'</li>'; 
