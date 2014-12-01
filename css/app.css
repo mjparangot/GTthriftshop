@@ -65,6 +65,7 @@
 	top: 10px;
 	left: 10px;
 	padding: 3%;
+	z-index: 10;
 }
 
 .item-image:hover .dim-overlay {
