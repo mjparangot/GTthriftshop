@@ -182,7 +182,6 @@
         imagesLoaded( $("#container-ul"), function() {
           msnry.layout();
         });
-        setOrbit();
   		  gettingFromScroll = false;
   		});
      }
