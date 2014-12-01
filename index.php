@@ -100,7 +100,7 @@
               
               <? 
                 if ($item['price'] != -1)
-                  echo '<li class="price">'$' . <?= $item['price'] ?></li>'; 
+                  echo '<li class="price">"$" . <?= $item['price'] ?></li>'; 
               ?>
     				</ul>
     			</li>
