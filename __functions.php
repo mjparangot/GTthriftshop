@@ -52,9 +52,7 @@
 				<? 
 				if ($item['price'] != -1 && $item['price'] != 0)
 					echo '<li class="price">$'.$item['price'].'</li>';
-				else if ($item['price'] < 0)
-					echo '<li class="price">$'. $item['price']*-1 .' for cheapest item</li>';
-				<?
+				
 				$price = '';
 				if ($item['price'] < 0)
 					$price = '$'.abs($item['price']).'+ (varies)';
