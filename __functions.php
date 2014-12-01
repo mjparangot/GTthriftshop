@@ -63,7 +63,7 @@
 				}
 				$date = new DateTime($item['startdate']);
 
-				if ($no_image) {
+				if ($no_image && $item['price'] > 0) {
 				?>
 					<li class="date-posted description border-rounded-bottom">Posted on <?= date_format($date,'m/d/Y') ?></li>
 				<?
