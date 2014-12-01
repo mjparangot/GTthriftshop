@@ -24,14 +24,14 @@
     			}
   		  });
   		}
-      var container = document.querySelector('#container');
+      var container = document.querySelector('#container_ul');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item'
       });
 
       imagesLoaded( container, function() {
-        msnry.reloadItems();
+        msnry.layout();
         setOrbit();
       });
 
