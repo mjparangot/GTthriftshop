@@ -19,7 +19,7 @@ if ($_POST['type'] == 'make_post') {
 	if ($description == '')
 		return echoJSON(array("text" => 'You need a description', 'action' => 'alert'));
 	
-	$added = addItemToDB($name, $description, $price, '', '', null);
+	$added = addItemToDB($name, $description, $price, '', $seller, null);
 	
 	return echoJSON(array("text" => "Added your item (".$name.")!", 'action' => '/item.php?id='.$added[0]['id'].'&newlycreated=true'));
 }
