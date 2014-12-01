@@ -75,6 +75,7 @@
    		};
    		
    		function isLoggedIn() {
+   			alert(Parse.User.current());
 			if (Parse.User.current() == null){
 				return false;
 			}
