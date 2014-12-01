@@ -24,7 +24,7 @@
     			}
   		  });
   		}
-      var container = document.querySelector('#container-ul');
+      var container = document.querySelector('#container');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item'
