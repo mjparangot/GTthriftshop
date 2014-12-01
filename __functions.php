@@ -46,11 +46,11 @@
 				</li>
 
 				<!-- Item description -->
-				<li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li>
+				<a href="<?=$item["postlink"]?>"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
 				<!-- Item price -->
 				<? 
-				if ($item['price'] != -1)
+				if ($item['price'] != -1 && $item['picture'] != '')
 					echo '<li class="price">$'.$item['price'].'</li>';
 				?>
 			</ul>
