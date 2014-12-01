@@ -88,7 +88,7 @@
     					//User is already logged in
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
-     		 			alert("You have logged in through Facebook!");
+     		 			//alert("You have logged in through Facebook!");
      		 			loginStuff();
      		 			//ACCESS TOKEN -
      		 			//alert(Parse.User.current().get('authData')['facebook']['access_token']);
@@ -101,8 +101,6 @@
   		};
   		
   		function logoutWithFacebook(){
-  		  	alert("logging out");
-  		  	alert("current "+Parse.User.current());
   		  	FB.logout(function(response) {
   				//console.log(user is now logged out);
 			});
