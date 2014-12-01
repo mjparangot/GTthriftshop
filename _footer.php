@@ -179,8 +179,10 @@
   		  $("#container-ul").append(data);
   		  msnry.appended(data);
         msnry.reloadItems();
-        msnry.layout();
-  		  setOrbit();
+        imagesLoaded( $("#container-ul"), function() {
+          msnry.layout();
+          setOrbit();
+        });
   		  gettingFromScroll = false;
   		});
      }
