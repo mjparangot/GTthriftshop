@@ -146,7 +146,7 @@
             </li>
 
             <!-- Item description -->
-  					<li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li>
+  					<a href="<?=$item["postlink"]?>"<li class="description"><?= $item['description'] ?></li></a>
 
             <!-- Item price -->
             <? 
