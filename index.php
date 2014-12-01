@@ -37,20 +37,20 @@
               <div class="row">
                 <label>Item 1</label>
                 <div class="large-6 columns">
-                  <label>Name
+                  <label>Item Name
                     <input type="text" placeholder="Name of item being sold" required/>
                   </label>
                 </div>
                 <div class="large-6 columns">
                   <label>Price
-                    <input type="text" placeholder="Asking price" />
+                    <input type="text" placeholder="Asking price" required/>
                   </label>
                 </div>
               </div>
               <div class="row">
                 <div class="large-12 columns">
                   <label>Description
-                    <textarea placeholder="Description of item being sold"></textarea>
+                    <textarea placeholder="Description of item being sold" required></textarea>
                   </label>
                 </div>
               </div>
