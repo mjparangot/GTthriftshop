@@ -56,7 +56,7 @@
 				else {
 					$price = '';
 					if ($item['price'] < 0)
-						$price = '$'.abs($item['price']).'+ (varies)';
+						$price = '$'.abs($item['price']);
 					else
 						$price = '$'.$item['price'];
 						
