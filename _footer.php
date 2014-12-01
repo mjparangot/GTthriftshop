@@ -12,11 +12,8 @@
         isAnimated: true
       });
 
-      jQuery(function(){
-        container.imagesLoaded( function () {
-          itemSelector: '.sale-item',
-          animate: true
-        });
+      container.imagesLoaded( function() {
+        msnry.layout();
       });
 
       
@@ -62,7 +59,8 @@
    		};
    		
    		function isLoggedIn() {
-			if (Parse.User.current() != null)
+   			alert(Parse.User.current());
+			if (user.existed())
 				return true;
 			else
 				return false;
