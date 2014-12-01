@@ -8,7 +8,7 @@
 	}
 	
 	function getSpecificItem($id) {
-		$item = runQuery('SELECT * FROM "items" WHERE id = '.intval($id);
+		$item = runQuery('SELECT * FROM "items" WHERE id = '.intval($id));
 		return $item;
 	}
 	
