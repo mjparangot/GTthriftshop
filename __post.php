@@ -2,26 +2,30 @@
 	include '__database.php';
 	include '__functions.php';
 
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
 if ($_POST['type'] == 'make_post') {
 	// return, array with vars text with text, action with action item to do
 	
 	$name = trim($_POST['name']);
 	$description = trim($_POST['description']);
-	$price = trim($_POST['price']);
-	$picture = trim($_POST['picture']);
+	$price = floatval(trim($_POST['price']));
 	$seller = trim($_POST['seller']);
 	
 	if ($name == '')
-		return json_encode(array("text" => 'You need to specify a name', 'action' => 'alert'));
+		echo json_encode(array("text" => 'You need to specify a name', 'action' => 'alert'));
 	
-	if (!(is_float($price) || is_int($price)))
-		return json_encode(array("text" => 'Invalid Price', 'action' => 'alert'));
 	
 	if ($description == '')
-		return json_encode(array("description" => 'You need a description', 'action' => 'alert'));
+		return echoJSON(array("text" => 'You need a description', 'action' => 'alert'));
 	
-	if ($description == '')
-		return json_encode(array("description" => 'You need a description', 'action' => 'alert'));
+	$added = addItemToDB($name, $description, $price, '', '', null);
+	
+	return echoJSON(array("text" => "Added your item (".$name.")!", 'action' => '/item.php?id='.$added[0]['id'].'&newlycreated=true'));
+}
+
+function echoJSON($arr) {
+	echo json_encode($arr);
 }
 
 ?>

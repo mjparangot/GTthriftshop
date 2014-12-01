@@ -33,7 +33,8 @@
           <div id="post-modal" class="reveal-modal" data-reveal>
             <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
-            <form action="__post.php" method="post" id="make-post-form">
+            <form enctype="multipart/form-data" action="__post.php" method="post" id="make-post-form">
+              <input type="hidden" name="type" value="make_post"/>
               <div class="row">
                 <div class="large-6 columns">
                   <label>Item Name
@@ -53,16 +54,10 @@
                   </label>
                 </div>
               </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Upload Image
-                    <input type="file" name="picture" placeholder="Image"></textarea>
-                  </label>
-                </div>
-              </div>
+              <input type="submit" class="button" value="Submit"/>
             </form>
             <!-- <a href="#" class="button">Submit</a> -->
-            <a href="#" class="button" data-reveal-id="fb-send-modal">Submit</a>
+            
             <!-- <a href="#" id="submit-button" class="button active make-post hidden-element" data-reveal-id="fb-send-modal">Submit</a>
         	<a href="#" id="submit-button-disabled" class="button transparent-element" onclick="alert('You must fill all the fields!');">Submit</a> -->
             

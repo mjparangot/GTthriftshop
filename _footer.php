@@ -67,14 +67,15 @@
   		
   		function submitMakePost() {
 			$.post( "__post.php", $( "#make-post-form" ).serialize(), function(data) {
+				data = $.parseJSON(data);
 				if (data.action == 'alert') {
 					alert(data.text);
 				} else {
 					alert(data.text);
-					window.url = data.action;
+					window.location = data.action;
 				}
-				return false;
 			});
+			return false;
 		}
     </script>
     <script type="text/javascript">

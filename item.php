@@ -1,21 +1,19 @@
-<? include '_header.php'; ?>
+<? if (!isset($_GET['id'])) echo 'You need an item ID'; else {
+
+include '_header.php';
+
+$item = getSpecificItem($_GET['id']);
+$item = $item[0];
+?>
 
     <div class="container">
 		<div class="row">
-				<h2>iPod Nano</h2>
+				<h2><?= $item['name'] ?> ($<?= $item['price'] ?>)</h2>
 		</div>
 		<div class="row">
-			<div class="col-md-5">
-				<img src="http://placehold.it/185x150"/>
-			</div>
 			<div class="col-md-7">
-				<div class="tags-container">
-					<span class="tag">apple</span> <span class="tag">ipod</span>
-				</div>
 				<div class="original-post">
-					<p>Test test test test test test test test test test test test test test
-					 test test test test test test test test test test test test test test test
-					  test test test test test test test test test test test test test test test</p>
+					<p><?= $item['description'] ?></p>
 				</div>
 			</div>
 		</div>
@@ -29,4 +27,6 @@
 		});
     </script>
 
-<? include '_footer.php'; ?>
+<? include '_footer.php';
+}
+?>
