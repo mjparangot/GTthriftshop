@@ -15,8 +15,8 @@
        jQuery(function(){
          var $cont = $('.container');
          $cont.imagesLoaded( function () {
-             itemSelector: '.box',
-             animate: true
+             itemSelector: '.sale-item',
+             isAnimated: true
          });
         });
 
