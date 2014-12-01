@@ -12,8 +12,11 @@
         isAnimated: true
       });
 
-      imagesLoaded( container, function() {
-        msnry.layout();
+      jQuery(function(){
+        container.imagesLoaded( function () {
+          itemSelector: '.sale-item',
+          animate: true
+        });
       });
 
       
