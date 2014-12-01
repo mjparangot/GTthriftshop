@@ -64,8 +64,13 @@
 	position: absolute;
 	top: 10px;
 	left: 10px;
+	padding: 3%;
 }
 
-.item-image:hover .dim-overlay,.view-post-btn {
+.item-image:hover .dim-overlay {
+	display: block;
+}
+
+.item-image:hover .view-post-btn {
 	display: block;
 }
