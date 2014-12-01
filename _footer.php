@@ -167,20 +167,20 @@
 			if (!isset($_GET['search'])) {
 		?>
 		$(window).scroll(function() {
-		   if($(window).scrollTop() + $(window).height() > $(document).height() - 150 && gettingFromScroll == false) {
-			   gettingFromScroll = true;
-			   $.get( "__get.php?type=get_posts&start="+$('.sale-item').length, function( data ) {
-				  data = $.parseHTML(data);
-				  data = $.grep(data, function(elem) {
-					return elem.nodeName != "#text";
-				  });
-				  $(container).append(data);
-				  msnry.appended(data);
-				  setOrbit();
-				  msnry.layout();
-				  gettingFromScroll = false;
-				});
-		   }
+      if($(window).scrollTop() + $(window).height() > $(document).height() - 150 && gettingFromScroll == false) {
+  	   gettingFromScroll = true;
+  	   $.get( "__get.php?type=get_posts&start="+$('.sale-item').length, function( data ) {
+  		  data = $.parseHTML(data);
+  		  data = $.grep(data, function(elem) {
+  			return elem.nodeName != "#text";
+  		  });
+  		  $(container).append(data);
+  		  msnry.appended(data);
+  		  setOrbit();
+  		  //msnry.layout();
+  		  gettingFromScroll = false;
+  		});
+     }
 		});
 		<? } ?>
     
