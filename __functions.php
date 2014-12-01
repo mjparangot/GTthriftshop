@@ -50,27 +50,30 @@
 
 				<!-- Item description -->
 				<?
-				if ($no_image)
+				if ($no_image) {
 				?>
 					<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description border-rounded-top" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 				<?
-				else
+				} else {
 				?>
 					<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 				
 				<!-- Date posted -->
 				<? 
+				}
 				$date = new DateTime($item['startdate']);
 
-				if ($no_image || $item['price'] == 0)
+				if ($no_image || $item['price'] == 0) {
 				?>
 					<li class="date-posted description border-rounded-bottom">Posted on <?= date_format($date,'m/d/Y') ?></li>
 				<?
-				else
+				} else {
 				?>
 					<li class="date-posted description">Posted on <?= date_format($date,'m/d/Y') ?></li>
 				<!-- Item price -->
 				<? 
+				}
+				
 				if ($item['price'] > 0) {
 					echo '<li class="price item-price">$'.$item['price'].'</li>';
 				}
