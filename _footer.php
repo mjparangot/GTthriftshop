@@ -3,24 +3,21 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script>
       $(document).foundation();
-      var container = document.querySelector('.container');
+      var container = document.querySelector('#container');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item',
         isAnimated: true
       });
 
-      jQuery(function(){
-        var $cont = $('.container');
-        $cont.imagesLoaded( function () {
-          msnry.reloadItems();
-        });
+      imagesLoaded( container, function() {
+        msnry.layout();
       });
-
       
-      var $iso_container = $('.container');
+      var $iso_container = $('#container');
   		// init
   		$iso_container.isotope({
     		// options
