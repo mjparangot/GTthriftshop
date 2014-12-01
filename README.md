@@ -12,3 +12,14 @@ continue transactions from there.
 Backend is totally set up. Posts from Facebook are being categorized via hashtags.
 We are currently waiting for our front-end team to finish their part of the project
 over the weekend.
+
+To Deploy
+==========
+
+To deploy our application, simply do the following:
+
+- Clone our Github repository from https://github.com/mjparangot/GTthriftshop
+- Set up a Heroku app with the Heroku Toolbelt, which can be downloaded and installed through here: https://toolbelt.heroku.com/
+- Associate the Heroku app with the cloned Git repo using the app command
+- Push to Heroku using `git push heroku master`
+- The app should now be set up at your Heroku URL!
