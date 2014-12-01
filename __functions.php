@@ -91,6 +91,7 @@
 			</ul>
 		</li>
 <?
+		$no_image = false;
 		}
 	}
 ?>
