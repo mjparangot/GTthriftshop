@@ -33,7 +33,6 @@
       });
 
       imagesLoaded( container, function() {
-        msnry.reloadItems();
         msnry.layout();
         setOrbit();
       });
