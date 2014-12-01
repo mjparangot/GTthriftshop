@@ -54,6 +54,7 @@
 }
 
 .date-posted {
+	padding: 0.3rem;
 	border-top: dotted 1px #dddddd;
 	border-bottom: none;
 }
