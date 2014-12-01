@@ -26,9 +26,13 @@
 		$status = pg_escape_literal($status);
 		$price = floatval($price);
 		
-		$query = 'INSERT INTO "items" (name,description,picture,seller,status,price) VALUES ('."$name,$description,$picture,$seller,$status,$price)";
+		$query = 'INSERT INTO "items" (name,description,picture,seller,status,price) VALUES ('."$name,$description,$picture,$seller,$status,$price) RETURNING id;";
 		
-		runQuery($query);
+		$id = runQuery($query);
+		
+		runQuery('UPDATE "items" SET postlink = \'/item.php?id='.$id[0]['id'].'\' WHERE id = '.$id[0]['id']);
+		
+		return $id;
 	}
 	
 	function runQuery($query) {

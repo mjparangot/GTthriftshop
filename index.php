@@ -33,7 +33,8 @@
           <div id="post-modal" class="reveal-modal" data-reveal>
             <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
-            <form action="__post.php" method="post" id="make-post-form">
+            <form enctype="multipart/form-data" action="__post.php" method="post" id="make-post-form">
+              <input type="hidden" name="type" value="make_post"/>
               <div class="row">
                 <div class="large-6 columns">
                   <label>Item Name
@@ -53,37 +54,30 @@
                   </label>
                 </div>
               </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Upload Image
-                    <input type="file" name="picture" placeholder="Image"></textarea>
-                  </label>
-                </div>
-              </div>
+              <input type="submit" class="button" value="Submit"/>
             </form>
-            <a href="#" class="button" data-reveal-id="fb-send-modal">Submit</a>
-            
+
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
-              Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!
- 			        <center>
-                <div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div>
-              </center>
+            Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!
+ 			<center><div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div></center>
  			
- 			        <a class="close-reveal-modal">&#215;</a>
-            </div>
+ 			<a class="close-reveal-modal">&#215;</a>
+			</div>
             
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </ul>
-
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="has-form">
             <div class="row collapse">
               <form id="searchpanel" action="" method="get">
-      				  <div class="large-12 small-12 columns">
+      				  <div class="large-8 small-9 columns">
                   <input id="searchbar" name="search" type="text" placeholder="Find Stuff">
+      				  </div>
+      				  <div class="large-4 small-3 columns">
+                  <input type="submit" value="Search" id="searchbutton" href="#" class="alert button expand"/>
       				  </div>
               </form>
             </div>
