@@ -109,7 +109,7 @@
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
-                          <a href="<?=$item['postlink']?>" class="button view-post-btn">View Post</a>
+                          <a href="<?=$item['postlink']?>" class="button [radius round] view-post-btn">View Post</a>
                           <div class="dim-overlay"></div>
                         </img>
                       </li>
