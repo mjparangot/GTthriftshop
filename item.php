@@ -104,6 +104,7 @@ include '_header.php';
 			<div class="col-md-7">
 				<div class="original-post">
 					<p><?= $item['description'] ?></p>
+					<p><a href="https://facebook.com/<?= $item['seller'] ?>">View this user's profile here</a> to send them a message!</p>
 				</div>
 			</div>
 		</div>
