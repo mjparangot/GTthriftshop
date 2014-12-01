@@ -108,7 +108,9 @@
         							$url = $pic;
         						?>
         							<li class="item-image">
-                        <img src="<?= $url ?>"/>
+                        <img src="<?= $url ?>">
+                          <div class="dim-overlay"></div>
+                        </img>
                       </li>
         						<?
         					}
