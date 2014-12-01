@@ -35,7 +35,6 @@
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
             <form>
               <div class="row">
-                <label>Item 1</label>
                 <div class="large-6 columns">
                   <label>Item Name
                     <input type="text" placeholder="Name of item being sold" required/>
@@ -55,8 +54,6 @@
                 </div>
               </div>
             </form>
-            <p>You can attach images in Facebook before you post to the group.</p>
-            <a href="#" class="button">Add Another Item</a>
             <!-- <a href="#" class="button">Submit</a> -->
             <a href="#" class="button" data-reveal-id="fb-send-modal">Submit</a>
             <!-- <a href="#" id="submit-button" class="button active make-post hidden-element" data-reveal-id="fb-send-modal">Submit</a>
