@@ -108,6 +108,7 @@
   		  	FB.logout(function(response) {
   				//console.log(user is now logged out);
 			});
+			logoutStuff();
   		};
   	
  		(function(d, s, id){
