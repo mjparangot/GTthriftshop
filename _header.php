@@ -17,8 +17,12 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/vendor/modernizr.js"></script>
+    
+    <!-- Parse -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ 	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
 
   </head>
-  <body>
