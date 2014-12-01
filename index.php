@@ -62,8 +62,8 @@
             
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
-            <h2>Share your post with Facebook's GT Thrift Shop page for more visibility!</h2>
- 			<div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="100" data-height="100" data-colorscheme="light"></div>
+            <h2>Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!</h2>
+ 			<center><div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div></center>
  			
  			<a class="close-reveal-modal">&#215;</a>
 			</div>
