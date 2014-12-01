@@ -32,7 +32,6 @@
 
       imagesLoaded( container, function() {
         msnry.layout();
-        setOrbit();
       });
 
       var $iso_container = $('#container');
