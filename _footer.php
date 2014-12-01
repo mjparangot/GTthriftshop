@@ -146,6 +146,13 @@
 			loginStuff();
 		else
 			logoutStuff();
+			
+		// Scrolling stuff
+		$(window).scroll(function() {
+		   if($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
+			   alert("near bottom!");
+		   }
+		});
     
     </script>
   </body>

@@ -1,4 +1,5 @@
 <?
+	include '__functions.php';
 	include '__database.php';
 ?>
 <!DOCTYPE html>
