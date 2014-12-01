@@ -12,14 +12,11 @@
         isAnimated: true
       });
 
-       jQuery(function(){
-         var $cont = $('.container');
-         $cont.imagesLoaded( function () {
-            //itemSelector: '.sale-item',
-            //isAnimated: true
-            msnry.reloadItems();
-         });
+      jQuery(function(){
+        container.imagesLoaded( function () {
+          msnry.reloadItems();
         });
+      });
 
       
       var $iso_container = $('.container');
