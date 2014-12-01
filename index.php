@@ -62,11 +62,10 @@
             
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
-            <h2>Awesome. I have it.</h2>
-  			<p class="lead">Your couch.  It is mine.</p>
- 			<p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
- 			<div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-colorscheme="light"></div>
-  			<a class="close-reveal-modal">&#215;</a>
+            <h2>Share your post with Facebook's GT Thrift Shop page for more visibility!</h2>
+ 			<div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="100" data-height="100" data-colorscheme="light"></div>
+ 			
+ 			<a class="close-reveal-modal">&#215;</a>
 			</div>
             
             <a class="close-reveal-modal">&#215;</a>
