@@ -13,7 +13,7 @@
         isAnimated: true
       });
 
-      imagesLoaded( container, function() {
+      msnry.imagesLoaded( container, function() {
         msnry.reloadItems();
       });
 
