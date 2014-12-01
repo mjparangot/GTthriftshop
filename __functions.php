@@ -52,7 +52,7 @@
 				<? 
 				$date = new DateTime($item['startdate']);
 				?>
-				<li class="description date-posted">Posted on <?= date_format($date,'m/d/Y') ?></li>
+				<li class="date-posted description">Posted on <?= date_format($date,'m/d/Y') ?></li>
 
 				<!-- Item price -->
 				<? 
