@@ -177,7 +177,7 @@
 				  $(container).append(data);
 				  msnry.appended(data);
 				  setOrbit();
-				  //msnry.layout();
+				  msnry.layout();
 				  gettingFromScroll = false;
 				});
 		   }
