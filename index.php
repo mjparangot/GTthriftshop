@@ -116,7 +116,7 @@
         						if (strpos($pic, '://') === FALSE)
         							$url = "https://graph.facebook.com/".$pic."/picture";
         						else
-        							$url = "http://lorempixel.com/g/800/600/abstract/No%8Fimage%8Favailable";
+        							$url = "http://lorempixel.com/g/800/600/abstract/No%20image%20available";
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
