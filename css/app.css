@@ -60,6 +60,10 @@
 
 .view-post-btn {
 	display: none;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 .item-image:hover .dim-overlay,.view-post-btn {
