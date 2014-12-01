@@ -111,7 +111,7 @@
         					$array_of_pics = array();
         					
         					if ($item['picture'] == '')
-        						$array_of_pics[] = 'http://dummyimage.com/600x400/000/ffffff.jpg&text=No+image+available';
+        						$array_of_pics[] = 'http://dummyimage.com/600x100/000/ffffff.jpg&text=No+image+available';
         					// else if it's an album of pics
         					else if (strpos($item['picture'], ',') !== FALSE) {
         						$array_of_pics = explode(',', $item['picture']);
