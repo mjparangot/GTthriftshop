@@ -82,6 +82,17 @@
 				return true;
 		}
 		
+		// Make a post form filled or not
+		function formNotFilled(){
+			$('#submit-button').hide();
+			$('#submit-button-disabled').show();
+		}
+		
+		function formFilled(){
+			$('#submit-button').show();
+			$('#submit-button-disabled').hide();
+		}
+		
 		function loginStuff() {
 			$('#fb-login').hide();
      		$('#fb-logout').show();
