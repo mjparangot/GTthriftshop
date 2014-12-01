@@ -25,7 +25,7 @@
   		  });
   		}
       setOrbit();
-      var container = document.querySelector('#container');
+      var container = document.querySelector('#container-ul');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item'
@@ -35,7 +35,7 @@
         msnry.layout();
       });
 
-      var $iso_container = $('#container');
+      var $iso_container = $('#container-ul');
   		// init
   		$iso_container.isotope({
     		// options
