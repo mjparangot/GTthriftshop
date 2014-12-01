@@ -62,8 +62,7 @@
    		};
    		
    		function isLoggedIn() {
-   			alert(Parse.User.current());
-			if (user.existed())
+			if (Parse.User.current() != null)
 				return true;
 			else
 				return false;
