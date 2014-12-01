@@ -33,7 +33,7 @@
           <div id="post-modal" class="reveal-modal" data-reveal>
             <p class="lead">Use this form to create a post on the GT Thrift Shop Facebook page.</p>
             <p>This form helps us create a standard structure for posts which makes it easier to populate this site.</p>
-            <form action="__post.php" method="post">
+            <form action="__post.php" method="post" id="make-post-form">
               <div class="row">
                 <div class="large-6 columns">
                   <label>Item Name
