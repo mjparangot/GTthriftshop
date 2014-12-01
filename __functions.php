@@ -1,9 +1,11 @@
 <?
 	function createItems($items) {
+		$no_image = false;
 		foreach ($items as $item) {
 ?> 
 		<li class="sale-item">
 			<ul class="pricing-table" href="<?=$item['postlink']?>" target="_blank">
+
 				<!-- Item image(s) -->
 				<li>
 					<ul class="image-orbit" data-orbit>
@@ -36,6 +38,7 @@
 							}
 							else {
 								$url = $pic;
+								$no_image = true;
 						?>
 								<li class="no-image"></li>
 					<?
@@ -46,14 +49,26 @@
 				</li>
 
 				<!-- Item description -->
-				<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
-
+				<?
+				if ($no_image)
+				?>
+					<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description border-rounded-top" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
+				<?
+				else
+				?>
+					<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
+				
 				<!-- Date posted -->
 				<? 
 				$date = new DateTime($item['startdate']);
-				?>
-				<li class="date-posted description">Posted on <?= date_format($date,'m/d/Y') ?></li>
 
+				if ($no_image || $item['price'] == 0)
+				?>
+					<li class="date-posted description border-rounded-bottom">Posted on <?= date_format($date,'m/d/Y') ?></li>
+				<?
+				else
+				?>
+					<li class="date-posted description">Posted on <?= date_format($date,'m/d/Y') ?></li>
 				<!-- Item price -->
 				<? 
 				if ($item['price'] > 0) {

@@ -38,12 +38,12 @@ body {
 	border-radius: 10px 10px 0 0;
 }
 
-.pricing-table .no-image .item-description {
+.border-rounded-top {
 	-webkit-border-radius: 10px 10px 0 0;
 	border-radius: 10px 10px 0 0;
 }
 
-.pricing-table .no-image .date-posted {
+.border-rounded-bottom {
 	-webkit-border-radius: 0 0 10px 10px;
 	border-radius: 0 0 10px 10px;
 }
