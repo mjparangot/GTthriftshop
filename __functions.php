@@ -49,7 +49,10 @@
 				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
 				<!-- Date posted -->
-				<li class="description date-posted">Posted on <?= date_format($item['startdate'], 'm/d/Y') ?></li>
+				<? 
+				$date = new DateTime($item['startdate']);
+				?>
+				<li class="description date-posted">Posted on <?= date_format($date,'m/d/Y') ?></li>
 
 				<!-- Item price -->
 				<? 
