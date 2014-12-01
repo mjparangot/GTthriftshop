@@ -1,3 +1,7 @@
+body {
+	background: rgb(232,232,232);
+}
+
 #container {
 	margin: 30px;
 }
@@ -50,7 +54,7 @@
 	line-height: 17px;
 	word-wrap: break-word;
 	border-bottom: none;
-	background: none;
+	background: white;
 	padding: 0.9375rem;
 	border-top: dotted 1px #dddddd;
 	border-bottom: none;
@@ -65,6 +69,7 @@
 .pricing-table .item-price {
 	border-top: dotted 1px #dddddd;
 	border-bottom: none;
+	background: white;
 }
 
 .orbit-slide-number {
