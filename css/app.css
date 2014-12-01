@@ -44,6 +44,8 @@
 	border-bottom: none;
 	background: none;
 	padding: 0.9375rem;
+	border-top: dotted 1px #dddddd;
+	border-bottom: none;
 }
 
 .orbit-slide-number {
