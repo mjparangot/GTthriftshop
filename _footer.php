@@ -62,6 +62,20 @@
   			*/
   			return true;
   		}
+  		
+  		$('#make-post-form').submit(submitMakePost);
+  		
+  		function submitMakePost() {
+			$.post( "__post.php", $( "#make-post-form" ).serialize(), function(data) {
+				if data.action == 'alert' {
+					alert(data.text);
+				} else {
+					alert(data.text);
+					window.url = data.action;
+				}
+				return false;
+			});
+		}
     </script>
     <script type="text/javascript">
         
