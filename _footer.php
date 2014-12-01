@@ -160,7 +160,7 @@
 		else
 			logoutStuff();
 		
-    /*
+    
 		// Scrolling stuff
 		var gettingFromScroll = false;
 		
@@ -185,7 +185,7 @@
      }
 		});
 		<? } ?>
-    */
+    
     </script>
   </body>
 </html>
