@@ -13,7 +13,8 @@
       });
 
       jQuery(function(){
-        container.imagesLoaded( function () {
+        var $cont = $('.container');
+        $cont.imagesLoaded( function () {
           msnry.reloadItems();
         });
       });
