@@ -57,6 +57,7 @@
    		};
    		
    		function isLoggedIn() {
+   			alert(Parse.User.current());
 			if (user.existed())
 				return true;
 			else
