@@ -60,8 +60,8 @@
 
 .view-post-btn {
 	display: none;
-	width: 100px;
 	position: absolute;
+	width: 100px;
 	top: 10px;
 	left: 10px;
 	padding: 3%;

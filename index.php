@@ -99,7 +99,7 @@
 				else
 					$items = getSelectedItems($_GET['search']);
 				foreach ($items as $item) {
-			?>
+			?> 
   			<li class="sale-item">
   				<ul class="pricing-table">
             <!-- Item image(s) -->
@@ -124,7 +124,7 @@
         						if (strpos($pic, '://') === FALSE)
         							$url = "https://graph.facebook.com/".$pic."/picture";
         						else
-        							$url = "http://lorempixel.com/800/600/abstract";
+        							$url = "http://lorempixel.com/g/800/600/abstract/No%8Fimage%8Favailable";
         						?>
         							<li class="item-image">
                         <img src="<?= $url ?>">
