@@ -1,4 +1,4 @@
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
@@ -13,6 +13,10 @@
         isAnimated: true
       });
       
+      $( window ).load(function() {
+        console.log( "window loaded" );
+      });
+
       msnry.reloadItems();
       
       var $iso_container = $('.container');
