@@ -22,7 +22,7 @@
           timer_container_class: 'orbit-timer'
         }
       });
-      var container = document.querySelector('#container');
+      var container = document.querySelector('#container-ul');
       var msnry = new Masonry( container, {
         // options
         itemSelector: '.sale-item',
@@ -167,10 +167,16 @@
 			   gettingFromScroll = true;
 			   $.get( "__get.php?type=get_posts&start="+$('.sale-item').length, function( data ) {
 				  console.log('got');
+				  data = $.parseHTML(data);
+				  data = $.grep(data, function(elem) {
+					return elem.nodeName != "#text";
+				  });
 				  console.log(data);
-				  $('#container-ul')[0].innerHTML += data;
+				  $(container).append(data);
+				  msnry.appended(data);
 				  gettingFromScroll = false;
 				  msnry.layout();
+				  
 				});
 		   }
 		});
