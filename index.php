@@ -82,7 +82,7 @@
           <li class="has-form">
             <div class="row collapse">
               <form id="searchpanel" action="" method="get">
-      				  <div class="large-8 small-9 columns">
+      				  <div class="large-12 small-12 columns">
                   <input id="searchbar" name="search" type="text" placeholder="Find Stuff">
       				  </div>
               </form>
