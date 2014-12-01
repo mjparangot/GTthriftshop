@@ -56,11 +56,7 @@
               </div>
               <input type="submit" class="button" value="Submit"/>
             </form>
-            <!-- <a href="#" class="button">Submit</a> -->
-            
-            <!-- <a href="#" id="submit-button" class="button active make-post hidden-element" data-reveal-id="fb-send-modal">Submit</a>
-        	<a href="#" id="submit-button-disabled" class="button transparent-element" onclick="alert('You must fill all the fields!');">Submit</a> -->
-            
+
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
             Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!

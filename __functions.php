@@ -46,12 +46,18 @@
 				</li>
 
 				<!-- Item description -->
-				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
+				<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
+
+				<!-- Date posted -->
+				<? 
+				$date = new DateTime($item['startdate']);
+				?>
+				<li class="date-posted description">Posted on <?= date_format($date,'m/d/Y') ?></li>
 
 				<!-- Item price -->
 				<? 
 				if ($item['price'] > 0) {
-					echo '<li class="price">$'.$item['price'].'</li>';
+					echo '<li class="price item-price">$'.$item['price'].'</li>';
 				}
 				else {
 					$price = '';
@@ -61,12 +67,9 @@
 						$price = '$'.$item['price'];
 						
 					if ($item['price'] != 0)
-						echo '<li class="price">'.$price.'</li>';
+						echo '<li class="price item-price">'.$price.'</li>';
 				}
 				?>
-
-				<!-- Date posted -->
-				<li class="date-posted"><?= $item['startdate'] ?></li>
 			</ul>
 		</li>
 <?
