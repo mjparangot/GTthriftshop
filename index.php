@@ -57,7 +57,15 @@
             </form>
             <p>You can attach images in Facebook before you post to the group.</p>
             <a href="#" class="button">Add Another Item</a>
-            <a href="#" class="button">Submit</a>
+            <!-- <a href="#" class="button">Submit</a> -->
+            <a href="#" id="submit-button" class="button active make-post hidden-element" data-reveal-id="fb-send-modal">Submit</a>
+            
+            <!-- FB Send Button Popup -->
+            <div id="fb-send-modal" class="reveal-modal" data-reveal>
+            <p class="lead">Would you like to share your post with the GT Thrift Shop Group?</p>
+            <div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-colorscheme="light"></div>
+            </div>
+            
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </ul>
@@ -91,7 +99,7 @@
 				else
 					$items = getSelectedItems($_GET['search']);
 				foreach ($items as $item) {
-			?>
+			?> 
   			<li class="sale-item">
   				<ul class="pricing-table">
             <!-- Item image(s) -->
