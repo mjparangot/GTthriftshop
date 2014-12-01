@@ -41,6 +41,10 @@
     		// options
     		itemSelector: '.sale-item'
   		});
+    
+      $( "body" ).scroll(function() {
+        msnry.layout();
+      });
   	
   		$('#searchpanel').submit(submitSearch);
   		
@@ -185,7 +189,6 @@
      }
 		});
 		<? } ?>
-    
     </script>
   </body>
 </html>
