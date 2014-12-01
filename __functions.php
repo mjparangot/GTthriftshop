@@ -50,7 +50,7 @@
 
 				<!-- Item price -->
 				<? 
-				if ($item['price'] != -1 || $item['price'] != 0)
+				if ($item['price'] != -1 && $item['price'] != 0)
 					echo '<li class="price">$'.$item['price'].'</li>';
 				?>
 			</ul>
