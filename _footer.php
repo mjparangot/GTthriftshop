@@ -17,7 +17,6 @@
           slide_number: true,
           bullets: false,
           navigation_arrows: false,
-          timer: false,
           slide_number_class: 'orbit-slide-number',
           timer_progress_class: 'orbit-progress'
         }
