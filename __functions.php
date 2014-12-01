@@ -49,7 +49,7 @@
 				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
 				<!-- Date posted -->
-				<li class="date-posted"><?= $item['startdate'] ?></li>
+				<li class="bullet-item date-posted"><?= $item['startdate'] ?></li>
 
 				<!-- Item price -->
 				<? 
