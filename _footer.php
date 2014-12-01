@@ -5,7 +5,20 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        orbit: {
+          animation: 'slide',
+          timer_speed: 2000,
+          pause_on_hover: true, // Pauses on the current slide while hovering
+          resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
+          next_on_click: true, // Advance to next slide on click
+          animation_speed: 500, // Sets the amount of time in milliseconds the transition between slides will last
+          navigation_arrows: false,
+          slide_number: true,
+          bullets: false,
+          navigation_arrows: false
+        }
+      });
       var container = document.querySelector('#container');
       var msnry = new Masonry( container, {
         // options
