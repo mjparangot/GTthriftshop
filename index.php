@@ -38,7 +38,7 @@
                 <label>Item 1</label>
                 <div class="large-6 columns">
                   <label>Name
-                    <input type="text" placeholder="Name of item being sold" />
+                    <input type="text" placeholder="Name of item being sold" required/>
                   </label>
                 </div>
                 <div class="large-6 columns">
@@ -62,7 +62,7 @@
             
             <!-- FB Send Button Popup -->
             <div id="fb-send-modal" class="reveal-modal" data-reveal>
-            <h2>Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!</h2>
+            Click the send button below to add your post to Facebook's GT Thrift Shop page for more visibility!
  			<center><div class="fb-send" data-href="http://gt-thrift-shop-test.herokuapp.com/#" data-width="1000" data-height="1000" data-colorscheme="light"></div></center>
  			
  			<a class="close-reveal-modal">&#215;</a>
