@@ -91,7 +91,7 @@
 				else
 					$items = getSelectedItems($_GET['search']);
 				foreach ($items as $item) {
-			?>
+			?> 
   			<li class="sale-item">
   				<ul class="pricing-table">
             <!-- Item image(s) -->
