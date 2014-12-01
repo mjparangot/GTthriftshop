@@ -49,15 +49,20 @@
 				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
 				<!-- Item price -->
-				<?
-				$price = '';
-				if ($item['price'] < 0)
-					$price = '$'.abs($item['price']).'+ (varies)';
-				else
-					$price = '$'.$item['price'];
-					
-				if ($item['price'] != 0)
-					echo '<li class="price">'.$price.'</li>';
+				<? 
+				if ($item['price'] > 0) {
+					echo '<li class="price">$'.$item['price'].'</li>';
+				}
+				else {
+					$price = '';
+					if ($item['price'] < 0)
+						$price = '$'.abs($item['price']);
+					else
+						$price = '$'.$item['price'];
+						
+					if ($item['price'] != 0)
+						echo '<li class="price">'.$price.'</li>';
+				}
 				?>
 			</ul>
 		</li>
