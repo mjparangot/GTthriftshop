@@ -60,10 +60,10 @@
    		
    		function isLoggedIn() {
    			alert(Parse.User.current());
-			if (Parse.User.current() != null)
-				return true;
-			else
+			if (Parse.User.current() == null)
 				return false;
+			else
+				return true;
 		}
 		
 		function loginStuff() {
@@ -84,7 +84,7 @@
     		// Run code after the Facebook SDK is loaded.
       		Parse.FacebookUtils.logIn(null, {
   				success: function(user) {
-    				if (!isLoggedIn()) {
+    				if (isLoggedIn()) {
      		 			alert("User signed up and logged in through Facebook!");
    			 		} else {
      		 			alert("You have logged in through Facebook!");
