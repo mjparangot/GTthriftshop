@@ -123,22 +123,25 @@
         						if ($pic == '')
         							continue;
         						
-        						if (strpos($pic, '://') === FALSE)
-        							$url = "https://graph.facebook.com/".$pic."/picture";
-                      echo '<li class="item-image">
-                              <img src="<?= $url ?>">
-                                <a href="<?=$item['postlink']?>" target="_blank" class="button radius round view-post-btn">View Post</a>
-                                <div class="dim-overlay"></div>
-                              </img>
-                            </li>';
-        						else
+        						if (strpos($pic, '://') === FALSE) {
+        							$url = "https://graph.facebook.com/".$pic."/picture"; 
+                ?>
+                      <li class="item-image">
+                        <img src="<?= $url ?>">
+                          <a href="<?=$item["postlink"]?>" target="_blank" class="button radius round view-post-btn">View Post</a>
+                          <div class="dim-overlay"></div>
+                        </img>
+                      </li>
+                  <?
+                    }
+        						else {
         							$url = $pic;
-                      echo '<li class="no-image"></li>';
+                  ?>
+                        <li class="no-image"></li>
+                  <?
+                    }
+                  }
         				?>
-                        
-        				<?
-        					}
-        			  ?>
               </ul>
             </li>
 
