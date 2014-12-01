@@ -181,8 +181,8 @@
         msnry.reloadItems();
         imagesLoaded( $("#container-ul"), function() {
           msnry.layout();
-          setOrbit();
         });
+        setOrbit();
   		  gettingFromScroll = false;
   		});
      }
