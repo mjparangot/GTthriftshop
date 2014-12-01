@@ -1,4 +1,4 @@
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/masonry.pkgd.js"></script>
@@ -8,12 +8,14 @@
       var container = document.querySelector('.container');
       var msnry = new Masonry( container, {
         // options
-        //columnWidth: 200,
         itemSelector: '.sale-item',
         isAnimated: true
       });
-      
-      msnry.reloadItems();
+
+      imagesLoaded( container, function() {
+        msnry.layout();
+      });
+
       
       var $iso_container = $('.container');
   		// init
