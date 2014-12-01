@@ -6,13 +6,15 @@
     <script>
       $(document).foundation();
       var container = document.querySelector('.container');
-      var msnry;
-      imagesLoaded( container, function() {
-        msnry = new Masonry( container, {
+      var msnry = new Masonry( container, {
         // options
         //columnWidth: 200,
         itemSelector: '.sale-item',
         isAnimated: true
+      });
+
+      imagesLoaded( container, function() {
+        msnry.layout();
       });
 
       
