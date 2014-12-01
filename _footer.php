@@ -41,10 +41,6 @@
     		// options
     		itemSelector: '.sale-item'
   		});
-    
-      $( "body" ).scroll(function() {
-        msnry.layout();
-      });
   	
   		$('#searchpanel').submit(submitSearch);
   		
@@ -182,6 +178,7 @@
   		  });
   		  $("#container-ul").append(data);
   		  msnry.appended(data);
+        msnry.reloadItems();
         msnry.layout();
   		  setOrbit();
   		  gettingFromScroll = false;
