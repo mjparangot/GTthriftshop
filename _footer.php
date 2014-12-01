@@ -24,8 +24,6 @@
     			}
   		  });
   		}
-  		setOrbit();
-      msnry.layout();
       var container = document.querySelector('#container-ul');
       var msnry = new Masonry( container, {
         // options
@@ -33,9 +31,10 @@
       });
 
       imagesLoaded( container, function() {
-        msnry.layout();
+        msnry.reloadItems();
+        setOrbit();
       });
-      
+
       var $iso_container = $('#container');
   		// init
   		$iso_container.isotope({
