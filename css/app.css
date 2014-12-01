@@ -33,7 +33,7 @@
 	border-radius: 10px 10px 0 0;
 }
 
-.pricing-table .description {
+.pricing-table .item-description {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;

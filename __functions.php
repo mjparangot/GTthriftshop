@@ -46,7 +46,7 @@
 				</li>
 
 				<!-- Item description -->
-				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
+				<a href="<?=$item["postlink"]?>" target="_blank"><li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
 				<!-- Date posted -->
 				<? 
