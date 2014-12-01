@@ -48,6 +48,9 @@
 				<!-- Item description -->
 				<a href="<?=$item["postlink"]?>" target="_blank"><li class="description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li></a>
 
+				<!-- Date posted -->
+				<li class="date-posted"><?= $item['startdate'] ?></li>
+
 				<!-- Item price -->
 				<? 
 				if ($item['price'] > 0) {
@@ -64,9 +67,6 @@
 						echo '<li class="price">'.$price.'</li>';
 				}
 				?>
-
-				<!-- Date posted -->
-				<li class="date-posted"><?= $item['startdate'] ?></li>
 			</ul>
 		</li>
 <?
