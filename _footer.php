@@ -12,9 +12,13 @@
         isAnimated: true
       });
 
-      container.imagesLoaded( function() {
-        msnry.layout();
-      });
+       jQuery(function(){
+         var $container = $('.container');
+         $container.imagesLoaded( function () {
+             itemSelector: '.box',
+             animate: true
+         });
+        });
 
       
       var $iso_container = $('.container');
