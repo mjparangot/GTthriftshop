@@ -130,10 +130,10 @@
                                 <a href="<?=$item['postlink']?>" target="_blank" class="button radius round view-post-btn">View Post</a>
                                 <div class="dim-overlay"></div>
                               </img>
-                            </li>'
+                            </li>';
         						else
         							$url = $pic;
-                      echo '<li class="no-image"></li>'
+                      echo '<li class="no-image"></li>';
         				?>
                         
         				<?
