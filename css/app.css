@@ -113,6 +113,10 @@ body {
 	z-index: 10;
 }
 
+.item-description:hover .dim-overlay {
+	display: block;
+}
+
 .item-image:hover .dim-overlay {
 	display: block;
 }
