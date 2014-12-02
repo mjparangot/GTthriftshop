@@ -53,17 +53,13 @@
 				if ($no_image) {
 				?>
 					<a href="<?=$item["postlink"]?>" target="_blank">
-						<li class="item-description border-rounded-top" href="<?=$item["postlink"]?>"><?= $item['description'] ?>
-							<div class="dim-overlay"></div>
-						</li>
+						<li class="item-description border-rounded-top" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li>
 					</a>
 				<?
 				} else {
 				?>
 					<a href="<?=$item["postlink"]?>" target="_blank">
-						<li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?>
-							<div class="dim-overlay"></div>
-						</li>
+						<li class="item-description" href="<?=$item["postlink"]?>"><?= $item['description'] ?></li>
 					</a>
 				
 				<!-- Date posted -->

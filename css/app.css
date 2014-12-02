@@ -113,8 +113,8 @@ body {
 	z-index: 10;
 }
 
-.item-description:hover .dim-overlay {
-	display: block;
+.item-description:hover {
+	background: #eee;
 }
 
 .item-image:hover .dim-overlay {
