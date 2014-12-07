@@ -25,7 +25,7 @@ To deploy our application, simply do the following:
 - Associate the Heroku app with the cloned Git repo by using this command in the repo folder:
   `heroku git:remote -a {project}`, where {project} is the name of yur Heroku app
 - Push to Heroku using `git push heroku master`
-- The app should now be set up at your Heroku URL!
+- The app should now be set up at your Heroku URL! (note: our source contains our database's information)
 
 To Deploy (Full)
 =========
