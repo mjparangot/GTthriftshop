@@ -4,7 +4,7 @@ README - GT Thrift Shop (Main Webapp)
 Authors: Kathy Cheng, Elizabeth Barsalou, Aditya Pujari, Steve Koshy, Matthew Paragot.
 
 Our application is completely web-based. All you have to do is open up:
-http://gt-thrift-shop-test.herokuapp.com/
+http://gt-thrift-shop.herokuapp.com/
 
 Posts are currently being read in from Facebook's GT Thrift Shop application and 
 displayed on the website. Click "View Post" to connect to the Facebook post and 
@@ -30,7 +30,7 @@ To deploy our application, simply do the following:
 To Deploy (Full)
 =========
 - Follow the above to setup the Main Webapp
-- Follow the instructions in our Database Code repo to set up the database pulling code
+- Follow the instructions in our Database Code repo to set up the database pulling code: https://github.com/skoshy/GTthriftshop-db
 - You're done!
 
 More Documentation
