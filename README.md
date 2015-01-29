@@ -1,4 +1,4 @@
-README - GT Thrift Shop (Main Webapp)
+GT Thrift Shop (Main Webapp)
 ======
 
 Authors: Kathy Cheng, Elizabeth Barsalou, Aditya Pujari, Steve Koshy, Matthew Paragot.
