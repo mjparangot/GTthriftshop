@@ -10,7 +10,7 @@ Posts are currently being read in from Facebook's GT Thrift Shop application and
 displayed on the website. Click "View Post" to connect to the Facebook post and 
 continue transactions from there.
 
-The front-end framework was built using
+The front-end framework was built using:
 
 Foundation: http://foundation.zurb.com/
 
